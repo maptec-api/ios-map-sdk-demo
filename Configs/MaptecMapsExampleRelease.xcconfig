@@ -1,0 +1,9 @@
+//
+//  MaptecMapsExampleRelease.xcconfig
+//  MaptecMapsExample
+//
+//  Shared Release configuration for the Example app.
+//
+
+#include? "../Pods/Target Support Files/Pods-MaptecMapsExample/Pods-MaptecMapsExample.release.xcconfig"
+HEADER_SEARCH_PATHS = $(inherited) $(SRCROOT)/GeneratedServiceConfiguration

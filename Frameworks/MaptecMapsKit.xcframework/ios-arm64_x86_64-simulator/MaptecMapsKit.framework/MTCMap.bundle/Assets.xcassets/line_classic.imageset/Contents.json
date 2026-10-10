@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "line_classic.pdf",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

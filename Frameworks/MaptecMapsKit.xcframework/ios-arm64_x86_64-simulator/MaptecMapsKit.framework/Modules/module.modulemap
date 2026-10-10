@@ -1,0 +1,6 @@
+framework module MaptecMapsKit {
+  umbrella header "MaptecMapsKit.h"
+  export *
+
+  module * { export * }
+}

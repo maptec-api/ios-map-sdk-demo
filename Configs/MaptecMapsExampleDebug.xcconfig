@@ -1,0 +1,9 @@
+//
+//  MaptecMapsExampleDebug.xcconfig
+//  MaptecMapsExample
+//
+//  Shared Debug configuration for the Example app.
+//
+
+#include? "../Pods/Target Support Files/Pods-MaptecMapsExample/Pods-MaptecMapsExample.debug.xcconfig"
+HEADER_SEARCH_PATHS = $(inherited) $(SRCROOT)/GeneratedServiceConfiguration

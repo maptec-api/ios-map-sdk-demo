@@ -1,0 +1,1616 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2C5B0EBB300F66C50011AA63 /* images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C5B0EBA300F66C50011AA63 /* images.xcassets */; };
+		5C5C0E4A933AA066C967F7AC /* Pods_MaptecMapsExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AC0285A51906BE03A92F2F8 /* Pods_MaptecMapsExample.framework */; };
+		865A264037274986B7184B29 /* MTCMockRouteLocationProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = C140E37BB35943259273C298 /* MTCMockRouteLocationProvider.m */; };
+		8C1000012FE2000000000001 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C1000112FE2000000000001 /* AppDelegate.m */; };
+		8C1000032FE2000000000001 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C1000152FE2000000000001 /* main.m */; };
+		8C1000042FE2000000000001 /* MaptecMapsKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C1000172FE2000000000001 /* MaptecMapsKit.xcframework */; };
+		8C1000052FE2000000000001 /* MaptecMapsKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8C1000172FE2000000000001 /* MaptecMapsKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8C1000402FE2000000000001 /* ExampleHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C1000512FE2000000000001 /* ExampleHomeViewController.m */; };
+		8C1000422FE2000000000001 /* ExampleSettingsSheetView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C1000552FE2000000000001 /* ExampleSettingsSheetView.m */; };
+		8C1000442FEE10C200000001 /* OverlayBasicMarkerExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C1000592FEE10C200000001 /* OverlayBasicMarkerExampleViewController.m */; };
+		8C1000822FE2000000000001 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C1000812FE2000000000001 /* SceneDelegate.m */; };
+		A102AE1C3036CC560021AE1D /* MTCRouteConditionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A102AE1B3036CC560021AE1D /* MTCRouteConditionViewController.m */; };
+		A12AD7043000BDF00080D773 /* MTCAuthConfigViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A12AD7033000BDF00080D773 /* MTCAuthConfigViewController.m */; };
+		A12AD7073000BE260080D773 /* MTCMapListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A12AD7063000BE260080D773 /* MTCMapListViewController.m */; };
+		A12AD70A3000BE4F0080D773 /* MTCOverlayListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A12AD7093000BE4F0080D773 /* MTCOverlayListViewController.m */; };
+		A12AD70D3000BE840080D773 /* MTCMapInteractionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A12AD70C3000BE840080D773 /* MTCMapInteractionsViewController.m */; };
+		A12AD7163000BF4C0080D773 /* MTCMapWebServiceListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A12AD7153000BF4C0080D773 /* MTCMapWebServiceListViewController.m */; };
+		A12AD71A3000C62C0080D773 /* MTCMapUIListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A12AD7193000C62C0080D773 /* MTCMapUIListViewController.m */; };
+		A12AD71D3000C6590080D773 /* MTCMapGestureListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A12AD71C3000C6590080D773 /* MTCMapGestureListViewController.m */; };
+		A12AD7203000C6730080D773 /* MTCMapLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A12AD71F3000C6730080D773 /* MTCMapLocationViewController.m */; };
+		A12AD7233000C6840080D773 /* MTCMapEventListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A12AD7223000C6840080D773 /* MTCMapEventListViewController.m */; };
+		A12AD7263000C6A70080D773 /* MTCMapPOIsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A12AD7253000C6A70080D773 /* MTCMapPOIsViewController.m */; };
+		A12AD7323000CDB80080D773 /* MTCExampleCompassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A12AD7293000CDB80080D773 /* MTCExampleCompassViewController.m */; };
+		A12AD7333000CDB80080D773 /* MTCExampleDayNightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A12AD72B3000CDB80080D773 /* MTCExampleDayNightViewController.m */; };
+		A12AD7343000CDB80080D773 /* MTCExampleLogoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A12AD72D3000CDB80080D773 /* MTCExampleLogoViewController.m */; };
+		A12AD7353000CDB80080D773 /* MTCExampleZoomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A12AD7313000CDB80080D773 /* MTCExampleZoomViewController.m */; };
+		A12AD7363000CDB80080D773 /* MTCExampleScaleBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A12AD72F3000CDB80080D773 /* MTCExampleScaleBarViewController.m */; };
+		A12AD73A3000DD340080D773 /* MTCMapAddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A12AD7393000DD340080D773 /* MTCMapAddViewController.m */; };
+		A12AD73D3000DD7C0080D773 /* MTCMapStyleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A12AD73C3000DD7C0080D773 /* MTCMapStyleViewController.m */; };
+		A12AD7403000DDC60080D773 /* MTCMapViewPortController.m in Sources */ = {isa = PBXBuildFile; fileRef = A12AD73F3000DDC60080D773 /* MTCMapViewPortController.m */; };
+		A12AD7433000E0DC0080D773 /* MTCExampleMarkModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A12AD7423000E0DC0080D773 /* MTCExampleMarkModel.m */; };
+		A12AD7473001145A0080D773 /* MTCMapLocationButtonController.m in Sources */ = {isa = PBXBuildFile; fileRef = A12AD7463001145A0080D773 /* MTCMapLocationButtonController.m */; };
+		A12AD74A3001146F0080D773 /* MTCMapLocationLayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = A12AD7493001146F0080D773 /* MTCMapLocationLayerController.m */; };
+		A12AD7523008D0000080D773 /* MTCGeometryCalculatorViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = A12AD7513008D0000080D773 /* MTCGeometryCalculatorViewController.mm */; };
+		A12AF79F303FE44D00E24A24 /* MTCLoggerConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = A12AF79E303FE44D00E24A24 /* MTCLoggerConfig.plist */; };
+		A134622C3004B0E500AC916F /* MTCFloatInfoSimpleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A134622B3004B0E500AC916F /* MTCFloatInfoSimpleViewController.m */; };
+		A134622F3004B16E00AC916F /* MTCFloatInfoStyleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A134622E3004B16E00AC916F /* MTCFloatInfoStyleViewController.m */; };
+		A13462323004B19100AC916F /* MTCFloatInfoRichTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A13462313004B19100AC916F /* MTCFloatInfoRichTextViewController.m */; };
+		A13462393004D10100AC916F /* MTCFloatInfoDemoSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = A13462383004D10100AC916F /* MTCFloatInfoDemoSupport.m */; };
+		A13462403004EF2400AC916F /* MTCGEOFencingSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = A134623F3004EF2400AC916F /* MTCGEOFencingSupport.m */; };
+		A13462413004EF2400AC916F /* MTCGEOFencingCircleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A134623B3004EF2400AC916F /* MTCGEOFencingCircleViewController.m */; };
+		A13462423004EF2400AC916F /* MTCGEOFencingPolygonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A134623D3004EF2400AC916F /* MTCGEOFencingPolygonViewController.m */; };
+		A13462A0300606B100AC916F /* MTCWebTextSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A134629F300606B100AC916F /* MTCWebTextSearchViewController.m */; };
+		A13462A3300606D000AC916F /* MTCWebNearbySearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A13462A2300606D000AC916F /* MTCWebNearbySearchViewController.m */; };
+		A13462A6300606EC00AC916F /* MTCWebInputTipsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A13462A5300606EC00AC916F /* MTCWebInputTipsViewController.m */; };
+		A13462A93006070500AC916F /* MTCWebLocationDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A13462A83006070500AC916F /* MTCWebLocationDetailViewController.m */; };
+		A13462AC3006074300AC916F /* MTCWebGeoCodingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A13462AB3006074300AC916F /* MTCWebGeoCodingViewController.m */; };
+		A13462AF3006075900AC916F /* MTCWebReverseGeoCodingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A13462AE3006075900AC916F /* MTCWebReverseGeoCodingViewController.m */; };
+		A13462B5300608D800AC916F /* MTCWebSettingsFloatView.m in Sources */ = {isa = PBXBuildFile; fileRef = A13462B4300608D800AC916F /* MTCWebSettingsFloatView.m */; };
+		A13462B9300648A700AC916F /* MTCWebSupportUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = A13462B8300648A700AC916F /* MTCWebSupportUtil.m */; };
+		A13462BC300659EC00AC916F /* MTCTextSearchRequestParams+MTCSupportFork.m in Sources */ = {isa = PBXBuildFile; fileRef = A13462BB300659EC00AC916F /* MTCTextSearchRequestParams+MTCSupportFork.m */; };
+		A13462BF30077C0200AC916F /* MTCMTCWebDetailPopupView.m in Sources */ = {isa = PBXBuildFile; fileRef = A13462BE30077C0200AC916F /* MTCMTCWebDetailPopupView.m */; };
+		A13462C03008F40100AC916F /* MTCPlace+MTCPrettyFork.m in Sources */ = {isa = PBXBuildFile; fileRef = A13462C23008F40100AC916F /* MTCPlace+MTCPrettyFork.m */; };
+		A1346652300E279900AC916F /* MaptecSearchKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1346651300E279900AC916F /* MaptecSearchKit.xcframework */; };
+		A1346653300E279900AC916F /* MaptecSearchKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A1346651300E279900AC916F /* MaptecSearchKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A1346669300E3E0800AC916F /* MaptecFoundationKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1346668300E3E0800AC916F /* MaptecFoundationKit.xcframework */; };
+		A134666A300E3E0800AC916F /* MaptecFoundationKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A1346668300E3E0800AC916F /* MaptecFoundationKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A13466763012217400AC916F /* MTCWebAuthStatusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A13466753012217400AC916F /* MTCWebAuthStatusViewController.m */; };
+		A134667A3016FDF000AC916F /* MTCHeatmapBasicsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A13466793016FDF000AC916F /* MTCHeatmapBasicsViewController.m */; };
+		A134667B3016FDF000AC916F /* heatmap_provider.json in Resources */ = {isa = PBXBuildFile; fileRef = A134667C3016FDF000AC916F /* heatmap_provider.json */; };
+		A16A51F92FED0062004982F1 /* MTCExampleMapBizUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = A16A51F82FED0062004982F1 /* MTCExampleMapBizUtil.m */; };
+		A1EC6E513020705500EE9A1E /* MTCMapRouteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1EC6E4A3020705500EE9A1E /* MTCMapRouteViewController.m */; };
+		A1EC6E62302096EF00EE9A1E /* MTCSearchKitRoutePlanningService.m in Sources */ = {isa = PBXBuildFile; fileRef = A1EC6E59302096EF00EE9A1E /* MTCSearchKitRoutePlanningService.m */; };
+		A1EC6E63302096EF00EE9A1E /* MTCRoutePlanSession.m in Sources */ = {isa = PBXBuildFile; fileRef = A1EC6E50302096EF00EE9A1E /* MTCRoutePlanSession.m */; };
+		A1EC6E64302096EF00EE9A1E /* MTCPolylineRouteRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = A1EC6E55302096EF00EE9A1E /* MTCPolylineRouteRenderer.m */; };
+		A1EC6E65302096EF00EE9A1E /* MTCRoutePlanStateStore.m in Sources */ = {isa = PBXBuildFile; fileRef = A1EC6E52302096EF00EE9A1E /* MTCRoutePlanStateStore.m */; };
+		A1EC6E66302096EF00EE9A1E /* MTCRoutePlanController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1EC6E5E302096EF00EE9A1E /* MTCRoutePlanController.m */; };
+		A1EC6E67302096EF00EE9A1E /* MTCRoutePlanModels.m in Sources */ = {isa = PBXBuildFile; fileRef = A1EC6E60302096EF00EE9A1E /* MTCRoutePlanModels.m */; };
+		A1EC6E6A302099B500EE9A1E /* MTCWebRoutePanel.m in Sources */ = {isa = PBXBuildFile; fileRef = A1EC6E69302099B500EE9A1E /* MTCWebRoutePanel.m */; };
+		A1EC6E6F3020BA8A00EE9A1E /* MTCExampleBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1EC6E6E3020BA8A00EE9A1E /* MTCExampleBaseViewController.m */; };
+		A1EC6ECC30331A8900EE9A1E /* MTCWebAlongSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A1EC6ECB30331A8900EE9A1E /* MTCWebAlongSearchViewController.m */; };
+		A1LOC0023020ACC300EE9A1E /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = A1LOC0013020ACC300EE9A1E /* Localizable.xcstrings */; };
+		A1LOC0053020ACC300EE9A1E /* MTCExampleDemoLocalization.m in Sources */ = {isa = PBXBuildFile; fileRef = A1LOC0043020ACC300EE9A1E /* MTCExampleDemoLocalization.m */; };
+		A1LOC0083020ACC300EE9A1E /* MTCExampleLanguageToggleControl.m in Sources */ = {isa = PBXBuildFile; fileRef = A1LOC0073020ACC300EE9A1E /* MTCExampleLanguageToggleControl.m */; };
+		B6F100012FFF000000000001 /* MTCExampleToastView.m in Sources */ = {isa = PBXBuildFile; fileRef = B6F100002FFF000000000001 /* MTCExampleToastView.m */; };
+		B6F150022FFF000000000001 /* MTCMapGestureControlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6F150012FFF000000000001 /* MTCMapGestureControlViewController.m */; };
+		B6F160022FFF000000000001 /* MTCMapGestureCoordinationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6F160012FFF000000000001 /* MTCMapGestureCoordinationViewController.m */; };
+		B6F170022FFF000000000001 /* MTCMapGestureDoubleClickDelayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6F170012FFF000000000001 /* MTCMapGestureDoubleClickDelayViewController.m */; };
+		B6F180022FFF000000000001 /* MTCMapGestureZoomCenterModeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6F180012FFF000000000001 /* MTCMapGestureZoomCenterModeViewController.m */; };
+		B6F190022FFF000000000001 /* MTCMapGestureDoubleTapZoomFactorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6F190012FFF000000000001 /* MTCMapGestureDoubleTapZoomFactorViewController.m */; };
+		B6F1A0022FFF000000000001 /* MTCMapGestureTwoFingerTapZoomResetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6F1A0012FFF000000000001 /* MTCMapGestureTwoFingerTapZoomResetViewController.m */; };
+		B6F1B0022FFF000000000001 /* MTCMapGestureDoubleTapPitchResetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6F1B0012FFF000000000001 /* MTCMapGestureDoubleTapPitchResetViewController.m */; };
+		B6F1C0022FFF000000000001 /* MTCMapGestureZoomAnimationDurationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6F1C0012FFF000000000001 /* MTCMapGestureZoomAnimationDurationViewController.m */; };
+		B6F1D0022FFF000000000001 /* MTCMapGestureRotateBearingRangeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6F1D0012FFF000000000001 /* MTCMapGestureRotateBearingRangeViewController.m */; };
+		B6F1E0022FFF000000000001 /* MTCMapGestureResistanceThresholdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6F1E0012FFF000000000001 /* MTCMapGestureResistanceThresholdViewController.m */; };
+		B6F1F0022FFF000000000001 /* MTCMapGestureInertialScrollDurationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6F1F0012FFF000000000001 /* MTCMapGestureInertialScrollDurationViewController.m */; };
+		B6F210022FFF000000000001 /* OverlayZoomScalingMarkerExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6F210012FFF000000000001 /* OverlayZoomScalingMarkerExampleViewController.m */; };
+		B6F220022FFF000000000001 /* OverlayNetworkImageMarkerExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6F220012FFF000000000001 /* OverlayNetworkImageMarkerExampleViewController.m */; };
+		B6F230022FFF000000000001 /* OverlaySDFColorMarkerExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6F230012FFF000000000001 /* OverlaySDFColorMarkerExampleViewController.m */; };
+		B6F240022FFF000000000001 /* OverlayMarkerAnimationExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6F240012FFF000000000001 /* OverlayMarkerAnimationExampleViewController.m */; };
+		B6F245022FFF000000000001 /* OverlayMarkerMovementExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6F245012FFF000000000001 /* OverlayMarkerMovementExampleViewController.m */; };
+		B6F250022FFF000000000001 /* OverlayBasicPolylineExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6F250012FFF000000000001 /* OverlayBasicPolylineExampleViewController.m */; };
+		B6F260022FFF000000000001 /* OverlayGlowPolylineExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6F260012FFF000000000001 /* OverlayGlowPolylineExampleViewController.m */; };
+		B6F270022FFF000000000001 /* OverlayDirectionalArrowPolylineExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6F270012FFF000000000001 /* OverlayDirectionalArrowPolylineExampleViewController.m */; };
+		B6F280022FFF000000000001 /* OverlayLineCapPolylineExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6F280012FFF000000000001 /* OverlayLineCapPolylineExampleViewController.m */; };
+		B6F290022FFF000000000001 /* OverlayBasicPolygonExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6F290012FFF000000000001 /* OverlayBasicPolygonExampleViewController.m */; };
+		B6F2A0022FFF000000000001 /* OverlayPatternFillPolygonExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6F2A0012FFF000000000001 /* OverlayPatternFillPolygonExampleViewController.m */; };
+		B6F2B0022FFF000000000001 /* OverlayTranslatePolygonExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6F2B0012FFF000000000001 /* OverlayTranslatePolygonExampleViewController.m */; };
+		B6F2C0022FFF000000000001 /* OverlayInteractivePolygonExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6F2C0012FFF000000000001 /* OverlayInteractivePolygonExampleViewController.m */; };
+		B6F2D0022FFF000000000001 /* OverlayBasicCircleExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6F2D0012FFF000000000001 /* OverlayBasicCircleExampleViewController.m */; };
+		B6F2E0022FFF000000000001 /* OverlayEqualDistanceCircleExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6F2E0012FFF000000000001 /* OverlayEqualDistanceCircleExampleViewController.m */; };
+		B6F2F0022FFF000000000001 /* OverlayDraggableCircleExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6F2F0012FFF000000000001 /* OverlayDraggableCircleExampleViewController.m */; };
+		B6F300022FFF000000000001 /* OverlayInnerShadowCircleExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6F300012FFF000000000001 /* OverlayInnerShadowCircleExampleViewController.m */; };
+		B6F310022FFF000000000001 /* OverlayOuterGlowCircleExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6F310012FFF000000000001 /* OverlayOuterGlowCircleExampleViewController.m */; };
+		B6F320022FFF000000000001 /* OverlayScanAnimationCircleExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6F320012FFF000000000001 /* OverlayScanAnimationCircleExampleViewController.m */; };
+		B6F330022FFF000000000001 /* OverlayPulseAnimationCircleExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6F330012FFF000000000001 /* OverlayPulseAnimationCircleExampleViewController.m */; };
+		B6F340022FFF000000000001 /* OverlayRadiusBreathingCircleExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6F340012FFF000000000001 /* OverlayRadiusBreathingCircleExampleViewController.m */; };
+		B6F350022FFF000000000001 /* OverlayLevelExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6F350012FFF000000000001 /* OverlayLevelExampleViewController.m */; };
+		B6F360022FFF000000000001 /* OverlayGradientPolylineExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6F360012FFF000000000001 /* OverlayGradientPolylineExampleViewController.m */; };
+		C26001022FFF000000000001 /* OverlayMarkerCollisionBehaviorExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C26001012FFF000000000001 /* OverlayMarkerCollisionBehaviorExampleViewController.m */; };
+		C8B410033020D00000000001 /* OverlayBasicClusterExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8B410023020D00000000001 /* OverlayBasicClusterExampleViewController.m */; };
+		C8B410043020D00000000001 /* cluster_sample_points.json in Resources */ = {isa = PBXBuildFile; fileRef = C8B410053020D00000000001 /* cluster_sample_points.json */; };
+		C9A100012026090800000001 /* MTCMapContentPaddingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9A100032026090800000001 /* MTCMapContentPaddingViewController.m */; };
+		CD1000013021400000000001 /* singapore_mock_route_driving_city_roads.json in Resources */ = {isa = PBXBuildFile; fileRef = CD1000113021400000000011 /* singapore_mock_route_driving_city_roads.json */; };
+		CD1000023021400000000002 /* singapore_mock_route_driving_expressway.json in Resources */ = {isa = PBXBuildFile; fileRef = CD1000123021400000000012 /* singapore_mock_route_driving_expressway.json */; };
+		CD1000033021400000000003 /* singapore_mock_route_cycling_city_roads.json in Resources */ = {isa = PBXBuildFile; fileRef = CD1000133021400000000013 /* singapore_mock_route_cycling_city_roads.json */; };
+		CD1000043021400000000004 /* singapore_mock_route_walking_city_roads.json in Resources */ = {isa = PBXBuildFile; fileRef = CD1000143021400000000014 /* singapore_mock_route_walking_city_roads.json */; };
+		D3A500032026092300000001 /* MTCToolListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3A500022026092300000001 /* MTCToolListViewController.m */; };
+		E1A100062FE3000000000001 /* OverlayBasicMarkerEffectTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A100032FE3000000000001 /* OverlayBasicMarkerEffectTest.swift */; };
+		E1A100072FE3000000000001 /* MaptecMapsExampleUITestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A100042FE3000000000001 /* MaptecMapsExampleUITestCase.swift */; };
+		E1A100082FE3000000000001 /* MTCExampleTestAccessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A100052FE3000000000002 /* MTCExampleTestAccessibility.swift */; };
+		E1A100132FE3000000000001 /* MTCExampleTestAccessibility.m in Sources */ = {isa = PBXBuildFile; fileRef = E1A100122FE3000000000001 /* MTCExampleTestAccessibility.m */; };
+		E1A100182FE3000000000001 /* MTCUITestQuiescence.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A100172FE3000000000001 /* MTCUITestQuiescence.swift */; };
+		E1A1001A2FE3000000000001 /* MTCUITestQuiescence.m in Sources */ = {isa = PBXBuildFile; fileRef = E1A100192FE3000000000001 /* MTCUITestQuiescence.m */; };
+		E1A1001C2FE3000000000001 /* OverlayBasicMarkerEffectTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A1001B2FE3000000000001 /* OverlayBasicMarkerEffectTestCase.swift */; };
+		E1A1001F2FE3000000000001 /* DemoCatalogNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A1001E2FE3000000000001 /* DemoCatalogNavigation.swift */; };
+		E1A100212FE3000000000001 /* MapTestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A100202FE3000000000001 /* MapTestHelper.swift */; };
+		E1A100232FE3000000000001 /* ExampleSettingsSheetHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A100222FE3000000000001 /* ExampleSettingsSheetHelper.swift */; };
+		E1A100262FE3000000000001 /* MTCExampleMapTestSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = E1A100252FE3000000000001 /* MTCExampleMapTestSupport.m */; };
+		E1A100292FE3000000000001 /* OverlayBasicCircleEffectTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A100272FE3000000000001 /* OverlayBasicCircleEffectTestCase.swift */; };
+		E1A1002A2FE3000000000001 /* OverlayBasicCircleEffectTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A100282FE3000000000001 /* OverlayBasicCircleEffectTest.swift */; };
+		E1A1002D2FE3000000000001 /* OverlayBasicPolylineEffectTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A1002B2FE3000000000001 /* OverlayBasicPolylineEffectTestCase.swift */; };
+		E1A1002E2FE3000000000001 /* OverlayBasicPolylineEffectTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A1002C2FE3000000000001 /* OverlayBasicPolylineEffectTest.swift */; };
+		E1A100312FE3000000000001 /* OverlayBasicPolygonEffectTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A1002F2FE3000000000001 /* OverlayBasicPolygonEffectTestCase.swift */; };
+		E1A100322FE3000000000001 /* OverlayBasicPolygonEffectTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A100302FE3000000000001 /* OverlayBasicPolygonEffectTest.swift */; };
+		E1A100342FE3000000000001 /* MapGestureScreenTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A100332FE3000000000001 /* MapGestureScreenTest.swift */; };
+		E1A100422FE3000000000001 /* MapCompassScreenTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A100412FE3000000000001 /* MapCompassScreenTest.swift */; };
+		E1A100442FE3000000000001 /* MapScaleScreenTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A100432FE3000000000001 /* MapScaleScreenTest.swift */; };
+		E1A100462FE3000000000001 /* MapZoomScreenTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A100452FE3000000000001 /* MapZoomScreenTest.swift */; };
+		E1A100482FE3000000000001 /* MapLogoScreenTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A100472FE3000000000001 /* MapLogoScreenTest.swift */; };
+		E1A1004A2FE3000000000001 /* MapDayNightScreenTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A100492FE3000000000001 /* MapDayNightScreenTest.swift */; };
+		E1A1004C2FE3000000000001 /* MapGestureCoordinationScreenTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A1004B2FE3000000000001 /* MapGestureCoordinationScreenTest.swift */; };
+		E1A1004E2FE3000000000001 /* MapGestureThresholdScreenTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A1004D2FE3000000000001 /* MapGestureThresholdScreenTest.swift */; };
+		E1A100502FE3000000000001 /* OverlayMarkerAnimationEffectTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A1004F2FE3000000000001 /* OverlayMarkerAnimationEffectTest.swift */; };
+		E1A100522FE3000000000001 /* OverlaySdfMarkerEffectTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A100512FE3000000000001 /* OverlaySdfMarkerEffectTest.swift */; };
+		E1A100542FE3000000000001 /* WebServiceSearchApiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A100532FE3000000000001 /* WebServiceSearchApiTests.swift */; };
+		E1A100562FE3000000000001 /* MapStyleScreenTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A100552FE3000000000001 /* MapStyleScreenTest.swift */; };
+		E1A100582FE3000000000001 /* MapTrafficScreenTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A100572FE3000000000001 /* MapTrafficScreenTest.swift */; };
+		E1A1005A2FE3000000000001 /* LocationLayerScreenTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A100592FE3000000000001 /* LocationLayerScreenTest.swift */; };
+		E1A1005C2FE3000000000001 /* PoiClickScreenTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A1005B2FE3000000000001 /* PoiClickScreenTest.swift */; };
+		E1A1005E2FE3000000000001 /* HeatmapBasicEffectTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A1005D2FE3000000000001 /* HeatmapBasicEffectTest.swift */; };
+		E1A100602FE3000000000001 /* PointClusterBasicScreenTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A1005F2FE3000000000001 /* PointClusterBasicScreenTest.swift */; };
+		E1A100622FE3000000000001 /* InfoWindowBasicEffectTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A100612FE3000000000001 /* InfoWindowBasicEffectTest.swift */; };
+		E1A100642FE3000000000001 /* OverlayZOrderEffectTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A100632FE3000000000001 /* OverlayZOrderEffectTest.swift */; };
+		E1A100662FE3000000000001 /* MapGestureOtherSettingsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A100652FE3000000000001 /* MapGestureOtherSettingsTest.swift */; };
+		E1A100682FE3000000000001 /* WebServiceAdvancedApiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A100672FE3000000000001 /* WebServiceAdvancedApiTests.swift */; };
+		E1A1006A2FE3000000000001 /* MapEventListenerScreenTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A100692FE3000000000001 /* MapEventListenerScreenTest.swift */; };
+		E1A1006C2FE3000000000001 /* MapViewPortScreenTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A1006B2FE3000000000001 /* MapViewPortScreenTest.swift */; };
+		E1A1006E2FE3000000000001 /* AuthConfigScreenTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A1006D2FE3000000000001 /* AuthConfigScreenTest.swift */; };
+		E1A100702FE3000000000001 /* GeofenceCircleScreenTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A1006F2FE3000000000001 /* GeofenceCircleScreenTest.swift */; };
+		E1A100722FE3000000000001 /* GeofencePolygonScreenTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A100712FE3000000000001 /* GeofencePolygonScreenTest.swift */; };
+		E1A100742FE3000000000001 /* OverlayDraggableCircleExampleTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A100732FE3000000000001 /* OverlayDraggableCircleExampleTest.swift */; };
+		E1A100762FE3000000000001 /* OverlayLineCapPolylineExampleTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A100752FE3000000000001 /* OverlayLineCapPolylineExampleTest.swift */; };
+		E1A100782FE3000000000001 /* OverlayDirectionalArrowPolylineExampleTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A100772FE3000000000001 /* OverlayDirectionalArrowPolylineExampleTest.swift */; };
+		E1A1007A2FE3000000000001 /* OverlayGlowPolylineExampleTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A100792FE3000000000001 /* OverlayGlowPolylineExampleTest.swift */; };
+		E1A1007C2FE3000000000001 /* OverlayPulseAnimationCircleExampleTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A1007B2FE3000000000001 /* OverlayPulseAnimationCircleExampleTest.swift */; };
+		E1A1007E2FE3000000000001 /* OverlayRadiusBreathingCircleExampleTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A1007D2FE3000000000001 /* OverlayRadiusBreathingCircleExampleTest.swift */; };
+		E1A100802FE3000000000001 /* OverlayScanAnimationCircleExampleTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A1007F2FE3000000000001 /* OverlayScanAnimationCircleExampleTest.swift */; };
+		E1A100822FE3000000000001 /* OverlayOuterGlowCircleExampleTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A100812FE3000000000001 /* OverlayOuterGlowCircleExampleTest.swift */; };
+		E1A100842FE3000000000001 /* OverlayInnerShadowCircleExampleTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A100832FE3000000000001 /* OverlayInnerShadowCircleExampleTest.swift */; };
+		E1A100862FE3000000000001 /* OverlayPatternFillPolygonExampleTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A100852FE3000000000001 /* OverlayPatternFillPolygonExampleTest.swift */; };
+		E1A100882FE3000000000001 /* OverlayInteractivePolygonExampleTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A100872FE3000000000001 /* OverlayInteractivePolygonExampleTest.swift */; };
+		E1A1008A2FE3000000000001 /* OverlayTranslatePolygonExampleTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A100892FE3000000000001 /* OverlayTranslatePolygonExampleTest.swift */; };
+		E1A1008C2FE3000000000001 /* OverlayNetworkImageMarkerExampleTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A1008B2FE3000000000001 /* OverlayNetworkImageMarkerExampleTest.swift */; };
+		E1A1008E2FE3000000000001 /* OverlayZoomScalingMarkerExampleTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A1008D2FE3000000000001 /* OverlayZoomScalingMarkerExampleTest.swift */; };
+		E1A100902FE3000000000001 /* MTCFloatInfoRichTextTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A1008F2FE3000000000001 /* MTCFloatInfoRichTextTest.swift */; };
+		E1A100922FE3000000000001 /* MTCGeometryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A100912FE3000000000001 /* MTCGeometryTests.swift */; };
+		E1A101022FE3000000000001 /* MTCCameraAnimationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A101012FE3000000000001 /* MTCCameraAnimationTests.swift */; };
+		E1A101082FE3000000000001 /* MapRenderScreenTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A101072FE3000000000001 /* MapRenderScreenTest.swift */; };
+		E1A101102FE3000000000001 /* OverlayEqualDistanceCircleExampleTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A101092FE3000000000001 /* OverlayEqualDistanceCircleExampleTest.swift */; };
+		E1A101162FE3000000000001 /* A0_PreflightSetupTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A101152FE3000000000001 /* A0_PreflightSetupTests.swift */; };
+		E1A102012FE3000000000001 /* MaptecFoundationKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A1346668300E3E0800AC916F /* MaptecFoundationKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E1A102022FE3000000000001 /* MaptecMapsKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8C1000172FE2000000000001 /* MaptecMapsKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E1A102032FE3000000000001 /* MaptecSearchKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A1346651300E279900AC916F /* MaptecSearchKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F1A100052026090200000001 /* MTCMapScreenshotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A100022026090200000001 /* MTCMapScreenshotViewController.m */; };
+		F1A100062026090200000001 /* MTCMapScreenshotPlaybackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A100042026090200000001 /* MTCMapScreenshotPlaybackViewController.m */; };
+		d8e186814eaf42c9be5e36aa /* MTCMapLimitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = af66ed90ea3a4d3b8a18cfaf /* MTCMapLimitViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E1A1000C2FE3000000000001 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8C1000242FE2000000000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8C1000202FE2000000000001;
+			remoteInfo = MaptecMapsExample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8C1000062FE2000000000001 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A134666A300E3E0800AC916F /* MaptecFoundationKit.xcframework in Embed Frameworks */,
+				8C1000052FE2000000000001 /* MaptecMapsKit.xcframework in Embed Frameworks */,
+				A1346653300E279900AC916F /* MaptecSearchKit.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2C144D172FECD72C00485658 /* LookinServer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = LookinServer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C5B0EBA300F66C50011AA63 /* images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = images.xcassets; sourceTree = "<group>"; };
+		4A194009CF04C0DE746A0A6F /* Pods-MaptecMapsExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MaptecMapsExample.release.xcconfig"; path = "Target Support Files/Pods-MaptecMapsExample/Pods-MaptecMapsExample.release.xcconfig"; sourceTree = "<group>"; };
+		8AC0285A51906BE03A92F2F8 /* Pods_MaptecMapsExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MaptecMapsExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C1000072FE2000000000001 /* MaptecMapsExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MaptecMapsExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C10000A2FF7000000000001 /* MaptecMapsExampleDebug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = MaptecMapsExampleDebug.xcconfig; sourceTree = "<group>"; };
+		8C10000B2FF7000000000001 /* MaptecMapsExampleRelease.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = MaptecMapsExampleRelease.xcconfig; sourceTree = "<group>"; };
+		8C1000102FE2000000000001 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8C1000112FE2000000000001 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8C1000142FE2000000000001 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C1000152FE2000000000001 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8C1000172FE2000000000001 /* MaptecMapsKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = Frameworks/MaptecMapsKit.xcframework; sourceTree = "<group>"; };
+		8C1000502FE2000000000001 /* ExampleHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExampleHomeViewController.h; sourceTree = "<group>"; };
+		8C1000512FE2000000000001 /* ExampleHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExampleHomeViewController.m; sourceTree = "<group>"; };
+		8C1000542FE2000000000001 /* ExampleSettingsSheetView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExampleSettingsSheetView.h; sourceTree = "<group>"; };
+		8C1000552FE2000000000001 /* ExampleSettingsSheetView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExampleSettingsSheetView.m; sourceTree = "<group>"; };
+		8C1000582FEE10C200000001 /* OverlayBasicMarkerExampleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OverlayBasicMarkerExampleViewController.h; sourceTree = "<group>"; };
+		8C1000592FEE10C200000001 /* OverlayBasicMarkerExampleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OverlayBasicMarkerExampleViewController.m; sourceTree = "<group>"; };
+		8C1000802FE2000000000001 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		8C1000812FE2000000000001 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		916F699E7011754B48591266 /* Pods-MaptecMapsExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MaptecMapsExample.debug.xcconfig"; path = "Target Support Files/Pods-MaptecMapsExample/Pods-MaptecMapsExample.debug.xcconfig"; sourceTree = "<group>"; };
+		A102AE1A3036CC560021AE1D /* MTCRouteConditionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTCRouteConditionViewController.h; sourceTree = "<group>"; };
+		A102AE1B3036CC560021AE1D /* MTCRouteConditionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTCRouteConditionViewController.m; sourceTree = "<group>"; };
+		A12AD7023000BDF00080D773 /* MTCAuthConfigViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTCAuthConfigViewController.h; sourceTree = "<group>"; };
+		A12AD7033000BDF00080D773 /* MTCAuthConfigViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTCAuthConfigViewController.m; sourceTree = "<group>"; };
+		A12AD7053000BE260080D773 /* MTCMapListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTCMapListViewController.h; sourceTree = "<group>"; };
+		A12AD7063000BE260080D773 /* MTCMapListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTCMapListViewController.m; sourceTree = "<group>"; };
+		A12AD7083000BE4F0080D773 /* MTCOverlayListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTCOverlayListViewController.h; sourceTree = "<group>"; };
+		A12AD7093000BE4F0080D773 /* MTCOverlayListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTCOverlayListViewController.m; sourceTree = "<group>"; };
+		A12AD70B3000BE840080D773 /* MTCMapInteractionsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTCMapInteractionsViewController.h; sourceTree = "<group>"; };
+		A12AD70C3000BE840080D773 /* MTCMapInteractionsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTCMapInteractionsViewController.m; sourceTree = "<group>"; };
+		A12AD7143000BF4C0080D773 /* MTCMapWebServiceListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTCMapWebServiceListViewController.h; sourceTree = "<group>"; };
+		A12AD7153000BF4C0080D773 /* MTCMapWebServiceListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTCMapWebServiceListViewController.m; sourceTree = "<group>"; };
+		A12AD7183000C62C0080D773 /* MTCMapUIListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTCMapUIListViewController.h; sourceTree = "<group>"; };
+		A12AD7193000C62C0080D773 /* MTCMapUIListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTCMapUIListViewController.m; sourceTree = "<group>"; };
+		A12AD71B3000C6590080D773 /* MTCMapGestureListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTCMapGestureListViewController.h; sourceTree = "<group>"; };
+		A12AD71C3000C6590080D773 /* MTCMapGestureListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTCMapGestureListViewController.m; sourceTree = "<group>"; };
+		A12AD71E3000C6730080D773 /* MTCMapLocationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTCMapLocationViewController.h; sourceTree = "<group>"; };
+		A12AD71F3000C6730080D773 /* MTCMapLocationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTCMapLocationViewController.m; sourceTree = "<group>"; };
+		A12AD7213000C6840080D773 /* MTCMapEventListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTCMapEventListViewController.h; sourceTree = "<group>"; };
+		A12AD7223000C6840080D773 /* MTCMapEventListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTCMapEventListViewController.m; sourceTree = "<group>"; };
+		A12AD7243000C6A70080D773 /* MTCMapPOIsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTCMapPOIsViewController.h; sourceTree = "<group>"; };
+		A12AD7253000C6A70080D773 /* MTCMapPOIsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTCMapPOIsViewController.m; sourceTree = "<group>"; };
+		A12AD7283000CDB80080D773 /* MTCExampleCompassViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTCExampleCompassViewController.h; sourceTree = "<group>"; };
+		A12AD7293000CDB80080D773 /* MTCExampleCompassViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTCExampleCompassViewController.m; sourceTree = "<group>"; };
+		A12AD72A3000CDB80080D773 /* MTCExampleDayNightViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTCExampleDayNightViewController.h; sourceTree = "<group>"; };
+		A12AD72B3000CDB80080D773 /* MTCExampleDayNightViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTCExampleDayNightViewController.m; sourceTree = "<group>"; };
+		A12AD72C3000CDB80080D773 /* MTCExampleLogoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTCExampleLogoViewController.h; sourceTree = "<group>"; };
+		A12AD72D3000CDB80080D773 /* MTCExampleLogoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTCExampleLogoViewController.m; sourceTree = "<group>"; };
+		A12AD72E3000CDB80080D773 /* MTCExampleScaleBarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTCExampleScaleBarViewController.h; sourceTree = "<group>"; };
+		A12AD72F3000CDB80080D773 /* MTCExampleScaleBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTCExampleScaleBarViewController.m; sourceTree = "<group>"; };
+		A12AD7303000CDB80080D773 /* MTCExampleZoomViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTCExampleZoomViewController.h; sourceTree = "<group>"; };
+		A12AD7313000CDB80080D773 /* MTCExampleZoomViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTCExampleZoomViewController.m; sourceTree = "<group>"; };
+		A12AD7383000DD340080D773 /* MTCMapAddViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTCMapAddViewController.h; sourceTree = "<group>"; };
+		A12AD7393000DD340080D773 /* MTCMapAddViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTCMapAddViewController.m; sourceTree = "<group>"; };
+		A12AD73B3000DD7C0080D773 /* MTCMapStyleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTCMapStyleViewController.h; sourceTree = "<group>"; };
+		A12AD73C3000DD7C0080D773 /* MTCMapStyleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTCMapStyleViewController.m; sourceTree = "<group>"; };
+		A12AD73E3000DDC60080D773 /* MTCMapViewPortController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTCMapViewPortController.h; sourceTree = "<group>"; };
+		A12AD73F3000DDC60080D773 /* MTCMapViewPortController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTCMapViewPortController.m; sourceTree = "<group>"; };
+		A12AD7413000E0DC0080D773 /* MTCExampleMarkModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTCExampleMarkModel.h; sourceTree = "<group>"; };
+		A12AD7423000E0DC0080D773 /* MTCExampleMarkModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTCExampleMarkModel.m; sourceTree = "<group>"; };
+		A12AD7453001145A0080D773 /* MTCMapLocationButtonController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTCMapLocationButtonController.h; sourceTree = "<group>"; };
+		A12AD7463001145A0080D773 /* MTCMapLocationButtonController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTCMapLocationButtonController.m; sourceTree = "<group>"; };
+		A12AD7483001146F0080D773 /* MTCMapLocationLayerController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTCMapLocationLayerController.h; sourceTree = "<group>"; };
+		A12AD7493001146F0080D773 /* MTCMapLocationLayerController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTCMapLocationLayerController.m; sourceTree = "<group>"; };
+		A12AD7503008D0000080D773 /* MTCGeometryCalculatorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTCGeometryCalculatorViewController.h; sourceTree = "<group>"; };
+		A12AD7513008D0000080D773 /* MTCGeometryCalculatorViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = MTCGeometryCalculatorViewController.mm; sourceTree = "<group>"; };
+		A12AF79E303FE44D00E24A24 /* MTCLoggerConfig.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = MTCLoggerConfig.plist; sourceTree = "<group>"; };
+		A134622A3004B0E500AC916F /* MTCFloatInfoSimpleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTCFloatInfoSimpleViewController.h; sourceTree = "<group>"; };
+		A134622B3004B0E500AC916F /* MTCFloatInfoSimpleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTCFloatInfoSimpleViewController.m; sourceTree = "<group>"; };
+		A134622D3004B16E00AC916F /* MTCFloatInfoStyleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTCFloatInfoStyleViewController.h; sourceTree = "<group>"; };
+		A134622E3004B16E00AC916F /* MTCFloatInfoStyleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTCFloatInfoStyleViewController.m; sourceTree = "<group>"; };
+		A13462303004B19100AC916F /* MTCFloatInfoRichTextViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTCFloatInfoRichTextViewController.h; sourceTree = "<group>"; };
+		A13462313004B19100AC916F /* MTCFloatInfoRichTextViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTCFloatInfoRichTextViewController.m; sourceTree = "<group>"; };
+		A13462373004D10100AC916F /* MTCFloatInfoDemoSupport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTCFloatInfoDemoSupport.h; sourceTree = "<group>"; };
+		A13462383004D10100AC916F /* MTCFloatInfoDemoSupport.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTCFloatInfoDemoSupport.m; sourceTree = "<group>"; };
+		A134623A3004EF2400AC916F /* MTCGEOFencingCircleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTCGEOFencingCircleViewController.h; sourceTree = "<group>"; };
+		A134623B3004EF2400AC916F /* MTCGEOFencingCircleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTCGEOFencingCircleViewController.m; sourceTree = "<group>"; };
+		A134623C3004EF2400AC916F /* MTCGEOFencingPolygonViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTCGEOFencingPolygonViewController.h; sourceTree = "<group>"; };
+		A134623D3004EF2400AC916F /* MTCGEOFencingPolygonViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTCGEOFencingPolygonViewController.m; sourceTree = "<group>"; };
+		A134623E3004EF2400AC916F /* MTCGEOFencingSupport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTCGEOFencingSupport.h; sourceTree = "<group>"; };
+		A134623F3004EF2400AC916F /* MTCGEOFencingSupport.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTCGEOFencingSupport.m; sourceTree = "<group>"; };
+		A134629E300606B100AC916F /* MTCWebTextSearchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTCWebTextSearchViewController.h; sourceTree = "<group>"; };
+		A134629F300606B100AC916F /* MTCWebTextSearchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTCWebTextSearchViewController.m; sourceTree = "<group>"; };
+		A13462A1300606D000AC916F /* MTCWebNearbySearchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTCWebNearbySearchViewController.h; sourceTree = "<group>"; };
+		A13462A2300606D000AC916F /* MTCWebNearbySearchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTCWebNearbySearchViewController.m; sourceTree = "<group>"; };
+		A13462A4300606EC00AC916F /* MTCWebInputTipsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTCWebInputTipsViewController.h; sourceTree = "<group>"; };
+		A13462A5300606EC00AC916F /* MTCWebInputTipsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTCWebInputTipsViewController.m; sourceTree = "<group>"; };
+		A13462A73006070500AC916F /* MTCWebLocationDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTCWebLocationDetailViewController.h; sourceTree = "<group>"; };
+		A13462A83006070500AC916F /* MTCWebLocationDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTCWebLocationDetailViewController.m; sourceTree = "<group>"; };
+		A13462AA3006074300AC916F /* MTCWebGeoCodingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTCWebGeoCodingViewController.h; sourceTree = "<group>"; };
+		A13462AB3006074300AC916F /* MTCWebGeoCodingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTCWebGeoCodingViewController.m; sourceTree = "<group>"; };
+		A13462AD3006075900AC916F /* MTCWebReverseGeoCodingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTCWebReverseGeoCodingViewController.h; sourceTree = "<group>"; };
+		A13462AE3006075900AC916F /* MTCWebReverseGeoCodingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTCWebReverseGeoCodingViewController.m; sourceTree = "<group>"; };
+		A13462B3300608D800AC916F /* MTCWebSettingsFloatView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTCWebSettingsFloatView.h; sourceTree = "<group>"; };
+		A13462B4300608D800AC916F /* MTCWebSettingsFloatView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTCWebSettingsFloatView.m; sourceTree = "<group>"; };
+		A13462B7300648A700AC916F /* MTCWebSupportUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTCWebSupportUtil.h; sourceTree = "<group>"; };
+		A13462B8300648A700AC916F /* MTCWebSupportUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTCWebSupportUtil.m; sourceTree = "<group>"; };
+		A13462BA300659EC00AC916F /* MTCTextSearchRequestParams+MTCSupportFork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MTCTextSearchRequestParams+MTCSupportFork.h"; sourceTree = "<group>"; };
+		A13462BB300659EC00AC916F /* MTCTextSearchRequestParams+MTCSupportFork.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "MTCTextSearchRequestParams+MTCSupportFork.m"; sourceTree = "<group>"; };
+		A13462BD30077C0200AC916F /* MTCMTCWebDetailPopupView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTCMTCWebDetailPopupView.h; sourceTree = "<group>"; };
+		A13462BE30077C0200AC916F /* MTCMTCWebDetailPopupView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTCMTCWebDetailPopupView.m; sourceTree = "<group>"; };
+		A13462C13008F40100AC916F /* MTCPlace+MTCPrettyFork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MTCPlace+MTCPrettyFork.h"; sourceTree = "<group>"; };
+		A13462C23008F40100AC916F /* MTCPlace+MTCPrettyFork.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "MTCPlace+MTCPrettyFork.m"; sourceTree = "<group>"; };
+		A1346651300E279900AC916F /* MaptecSearchKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = Frameworks/MaptecSearchKit.xcframework; sourceTree = "<group>"; };
+		A1346668300E3E0800AC916F /* MaptecFoundationKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = Frameworks/MaptecFoundationKit.xcframework; sourceTree = "<group>"; };
+		A13466743012217400AC916F /* MTCWebAuthStatusViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTCWebAuthStatusViewController.h; sourceTree = "<group>"; };
+		A13466753012217400AC916F /* MTCWebAuthStatusViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTCWebAuthStatusViewController.m; sourceTree = "<group>"; };
+		A13466783016FDF000AC916F /* MTCHeatmapBasicsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTCHeatmapBasicsViewController.h; sourceTree = "<group>"; };
+		A13466793016FDF000AC916F /* MTCHeatmapBasicsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTCHeatmapBasicsViewController.m; sourceTree = "<group>"; };
+		A134667C3016FDF000AC916F /* heatmap_provider.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = heatmap_provider.json; sourceTree = "<group>"; };
+		A16A51F72FED0062004982F1 /* MTCExampleMapBizUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTCExampleMapBizUtil.h; sourceTree = "<group>"; };
+		A16A51F82FED0062004982F1 /* MTCExampleMapBizUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTCExampleMapBizUtil.m; sourceTree = "<group>"; };
+		A1EC6E493020705500EE9A1E /* MTCMapRouteViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTCMapRouteViewController.h; sourceTree = "<group>"; };
+		A1EC6E4A3020705500EE9A1E /* MTCMapRouteViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTCMapRouteViewController.m; sourceTree = "<group>"; };
+		A1EC6E4C302096EF00EE9A1E /* MTCMapRouteRendering.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTCMapRouteRendering.h; sourceTree = "<group>"; };
+		A1EC6E4D302096EF00EE9A1E /* MTCRoutePlanController+Internal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MTCRoutePlanController+Internal.h"; sourceTree = "<group>"; };
+		A1EC6E4E302096EF00EE9A1E /* MTCRoutePlanModels+Internal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MTCRoutePlanModels+Internal.h"; sourceTree = "<group>"; };
+		A1EC6E4F302096EF00EE9A1E /* MTCRoutePlanSession.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTCRoutePlanSession.h; sourceTree = "<group>"; };
+		A1EC6E50302096EF00EE9A1E /* MTCRoutePlanSession.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTCRoutePlanSession.m; sourceTree = "<group>"; };
+		A1EC6E51302096EF00EE9A1E /* MTCRoutePlanStateStore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTCRoutePlanStateStore.h; sourceTree = "<group>"; };
+		A1EC6E52302096EF00EE9A1E /* MTCRoutePlanStateStore.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTCRoutePlanStateStore.m; sourceTree = "<group>"; };
+		A1EC6E54302096EF00EE9A1E /* MTCPolylineRouteRenderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTCPolylineRouteRenderer.h; sourceTree = "<group>"; };
+		A1EC6E55302096EF00EE9A1E /* MTCPolylineRouteRenderer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTCPolylineRouteRenderer.m; sourceTree = "<group>"; };
+		A1EC6E57302096EF00EE9A1E /* MTCRoutePlanningService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTCRoutePlanningService.h; sourceTree = "<group>"; };
+		A1EC6E58302096EF00EE9A1E /* MTCSearchKitRoutePlanningService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTCSearchKitRoutePlanningService.h; sourceTree = "<group>"; };
+		A1EC6E59302096EF00EE9A1E /* MTCSearchKitRoutePlanningService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTCSearchKitRoutePlanningService.m; sourceTree = "<group>"; };
+		A1EC6E5D302096EF00EE9A1E /* MTCRoutePlanController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTCRoutePlanController.h; sourceTree = "<group>"; };
+		A1EC6E5E302096EF00EE9A1E /* MTCRoutePlanController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTCRoutePlanController.m; sourceTree = "<group>"; };
+		A1EC6E5F302096EF00EE9A1E /* MTCRoutePlanModels.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTCRoutePlanModels.h; sourceTree = "<group>"; };
+		A1EC6E60302096EF00EE9A1E /* MTCRoutePlanModels.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTCRoutePlanModels.m; sourceTree = "<group>"; };
+		A1EC6E68302099B500EE9A1E /* MTCWebRoutePanel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTCWebRoutePanel.h; sourceTree = "<group>"; };
+		A1EC6E69302099B500EE9A1E /* MTCWebRoutePanel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTCWebRoutePanel.m; sourceTree = "<group>"; };
+		A1EC6E6D3020BA8A00EE9A1E /* MTCExampleBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTCExampleBaseViewController.h; sourceTree = "<group>"; };
+		A1EC6E6E3020BA8A00EE9A1E /* MTCExampleBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTCExampleBaseViewController.m; sourceTree = "<group>"; };
+		A1EC6ECA30331A8900EE9A1E /* MTCWebAlongSearchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTCWebAlongSearchViewController.h; sourceTree = "<group>"; };
+		A1EC6ECB30331A8900EE9A1E /* MTCWebAlongSearchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTCWebAlongSearchViewController.m; sourceTree = "<group>"; };
+		A1LOC0013020ACC300EE9A1E /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		A1LOC0033020ACC300EE9A1E /* MTCExampleDemoLocalization.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTCExampleDemoLocalization.h; sourceTree = "<group>"; };
+		A1LOC0043020ACC300EE9A1E /* MTCExampleDemoLocalization.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTCExampleDemoLocalization.m; sourceTree = "<group>"; };
+		A1LOC0063020ACC300EE9A1E /* MTCExampleLanguageToggleControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTCExampleLanguageToggleControl.h; sourceTree = "<group>"; };
+		A1LOC0073020ACC300EE9A1E /* MTCExampleLanguageToggleControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTCExampleLanguageToggleControl.m; sourceTree = "<group>"; };
+		B6F0FFFF2FFF000000000001 /* MTCExampleToastView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTCExampleToastView.h; sourceTree = "<group>"; };
+		B6F100002FFF000000000001 /* MTCExampleToastView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTCExampleToastView.m; sourceTree = "<group>"; };
+		B6F150002FFF000000000001 /* MTCMapGestureControlViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTCMapGestureControlViewController.h; sourceTree = "<group>"; };
+		B6F150012FFF000000000001 /* MTCMapGestureControlViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTCMapGestureControlViewController.m; sourceTree = "<group>"; };
+		B6F160002FFF000000000001 /* MTCMapGestureCoordinationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTCMapGestureCoordinationViewController.h; sourceTree = "<group>"; };
+		B6F160012FFF000000000001 /* MTCMapGestureCoordinationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTCMapGestureCoordinationViewController.m; sourceTree = "<group>"; };
+		B6F170002FFF000000000001 /* MTCMapGestureDoubleClickDelayViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTCMapGestureDoubleClickDelayViewController.h; sourceTree = "<group>"; };
+		B6F170012FFF000000000001 /* MTCMapGestureDoubleClickDelayViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTCMapGestureDoubleClickDelayViewController.m; sourceTree = "<group>"; };
+		B6F180002FFF000000000001 /* MTCMapGestureZoomCenterModeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTCMapGestureZoomCenterModeViewController.h; sourceTree = "<group>"; };
+		B6F180012FFF000000000001 /* MTCMapGestureZoomCenterModeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTCMapGestureZoomCenterModeViewController.m; sourceTree = "<group>"; };
+		B6F190002FFF000000000001 /* MTCMapGestureDoubleTapZoomFactorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTCMapGestureDoubleTapZoomFactorViewController.h; sourceTree = "<group>"; };
+		B6F190012FFF000000000001 /* MTCMapGestureDoubleTapZoomFactorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTCMapGestureDoubleTapZoomFactorViewController.m; sourceTree = "<group>"; };
+		B6F1A0002FFF000000000001 /* MTCMapGestureTwoFingerTapZoomResetViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTCMapGestureTwoFingerTapZoomResetViewController.h; sourceTree = "<group>"; };
+		B6F1A0012FFF000000000001 /* MTCMapGestureTwoFingerTapZoomResetViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTCMapGestureTwoFingerTapZoomResetViewController.m; sourceTree = "<group>"; };
+		B6F1B0002FFF000000000001 /* MTCMapGestureDoubleTapPitchResetViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTCMapGestureDoubleTapPitchResetViewController.h; sourceTree = "<group>"; };
+		B6F1B0012FFF000000000001 /* MTCMapGestureDoubleTapPitchResetViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTCMapGestureDoubleTapPitchResetViewController.m; sourceTree = "<group>"; };
+		B6F1C0002FFF000000000001 /* MTCMapGestureZoomAnimationDurationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTCMapGestureZoomAnimationDurationViewController.h; sourceTree = "<group>"; };
+		B6F1C0012FFF000000000001 /* MTCMapGestureZoomAnimationDurationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTCMapGestureZoomAnimationDurationViewController.m; sourceTree = "<group>"; };
+		B6F1D0002FFF000000000001 /* MTCMapGestureRotateBearingRangeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTCMapGestureRotateBearingRangeViewController.h; sourceTree = "<group>"; };
+		B6F1D0012FFF000000000001 /* MTCMapGestureRotateBearingRangeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTCMapGestureRotateBearingRangeViewController.m; sourceTree = "<group>"; };
+		B6F1E0002FFF000000000001 /* MTCMapGestureResistanceThresholdViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTCMapGestureResistanceThresholdViewController.h; sourceTree = "<group>"; };
+		B6F1E0012FFF000000000001 /* MTCMapGestureResistanceThresholdViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTCMapGestureResistanceThresholdViewController.m; sourceTree = "<group>"; };
+		B6F1F0002FFF000000000001 /* MTCMapGestureInertialScrollDurationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTCMapGestureInertialScrollDurationViewController.h; sourceTree = "<group>"; };
+		B6F1F0012FFF000000000001 /* MTCMapGestureInertialScrollDurationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTCMapGestureInertialScrollDurationViewController.m; sourceTree = "<group>"; };
+		B6F210002FFF000000000001 /* OverlayZoomScalingMarkerExampleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OverlayZoomScalingMarkerExampleViewController.h; sourceTree = "<group>"; };
+		B6F210012FFF000000000001 /* OverlayZoomScalingMarkerExampleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OverlayZoomScalingMarkerExampleViewController.m; sourceTree = "<group>"; };
+		B6F220002FFF000000000001 /* OverlayNetworkImageMarkerExampleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OverlayNetworkImageMarkerExampleViewController.h; sourceTree = "<group>"; };
+		B6F220012FFF000000000001 /* OverlayNetworkImageMarkerExampleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OverlayNetworkImageMarkerExampleViewController.m; sourceTree = "<group>"; };
+		B6F230002FFF000000000001 /* OverlaySDFColorMarkerExampleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OverlaySDFColorMarkerExampleViewController.h; sourceTree = "<group>"; };
+		B6F230012FFF000000000001 /* OverlaySDFColorMarkerExampleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OverlaySDFColorMarkerExampleViewController.m; sourceTree = "<group>"; };
+		B6F240002FFF000000000001 /* OverlayMarkerAnimationExampleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OverlayMarkerAnimationExampleViewController.h; sourceTree = "<group>"; };
+		B6F240012FFF000000000001 /* OverlayMarkerAnimationExampleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OverlayMarkerAnimationExampleViewController.m; sourceTree = "<group>"; };
+		B6F245002FFF000000000001 /* OverlayMarkerMovementExampleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OverlayMarkerMovementExampleViewController.h; sourceTree = "<group>"; };
+		B6F245012FFF000000000001 /* OverlayMarkerMovementExampleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OverlayMarkerMovementExampleViewController.m; sourceTree = "<group>"; };
+		B6F250002FFF000000000001 /* OverlayBasicPolylineExampleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OverlayBasicPolylineExampleViewController.h; sourceTree = "<group>"; };
+		B6F250012FFF000000000001 /* OverlayBasicPolylineExampleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OverlayBasicPolylineExampleViewController.m; sourceTree = "<group>"; };
+		B6F260002FFF000000000001 /* OverlayGlowPolylineExampleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OverlayGlowPolylineExampleViewController.h; sourceTree = "<group>"; };
+		B6F260012FFF000000000001 /* OverlayGlowPolylineExampleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OverlayGlowPolylineExampleViewController.m; sourceTree = "<group>"; };
+		B6F270002FFF000000000001 /* OverlayDirectionalArrowPolylineExampleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OverlayDirectionalArrowPolylineExampleViewController.h; sourceTree = "<group>"; };
+		B6F270012FFF000000000001 /* OverlayDirectionalArrowPolylineExampleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OverlayDirectionalArrowPolylineExampleViewController.m; sourceTree = "<group>"; };
+		B6F280002FFF000000000001 /* OverlayLineCapPolylineExampleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OverlayLineCapPolylineExampleViewController.h; sourceTree = "<group>"; };
+		B6F280012FFF000000000001 /* OverlayLineCapPolylineExampleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OverlayLineCapPolylineExampleViewController.m; sourceTree = "<group>"; };
+		B6F290002FFF000000000001 /* OverlayBasicPolygonExampleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OverlayBasicPolygonExampleViewController.h; sourceTree = "<group>"; };
+		B6F290012FFF000000000001 /* OverlayBasicPolygonExampleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OverlayBasicPolygonExampleViewController.m; sourceTree = "<group>"; };
+		B6F2A0002FFF000000000001 /* OverlayPatternFillPolygonExampleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OverlayPatternFillPolygonExampleViewController.h; sourceTree = "<group>"; };
+		B6F2A0012FFF000000000001 /* OverlayPatternFillPolygonExampleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OverlayPatternFillPolygonExampleViewController.m; sourceTree = "<group>"; };
+		B6F2B0002FFF000000000001 /* OverlayTranslatePolygonExampleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OverlayTranslatePolygonExampleViewController.h; sourceTree = "<group>"; };
+		B6F2B0012FFF000000000001 /* OverlayTranslatePolygonExampleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OverlayTranslatePolygonExampleViewController.m; sourceTree = "<group>"; };
+		B6F2C0002FFF000000000001 /* OverlayInteractivePolygonExampleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OverlayInteractivePolygonExampleViewController.h; sourceTree = "<group>"; };
+		B6F2C0012FFF000000000001 /* OverlayInteractivePolygonExampleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OverlayInteractivePolygonExampleViewController.m; sourceTree = "<group>"; };
+		B6F2D0002FFF000000000001 /* OverlayBasicCircleExampleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OverlayBasicCircleExampleViewController.h; sourceTree = "<group>"; };
+		B6F2D0012FFF000000000001 /* OverlayBasicCircleExampleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OverlayBasicCircleExampleViewController.m; sourceTree = "<group>"; };
+		B6F2E0002FFF000000000001 /* OverlayEqualDistanceCircleExampleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OverlayEqualDistanceCircleExampleViewController.h; sourceTree = "<group>"; };
+		B6F2E0012FFF000000000001 /* OverlayEqualDistanceCircleExampleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OverlayEqualDistanceCircleExampleViewController.m; sourceTree = "<group>"; };
+		B6F2F0002FFF000000000001 /* OverlayDraggableCircleExampleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OverlayDraggableCircleExampleViewController.h; sourceTree = "<group>"; };
+		B6F2F0012FFF000000000001 /* OverlayDraggableCircleExampleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OverlayDraggableCircleExampleViewController.m; sourceTree = "<group>"; };
+		B6F300002FFF000000000001 /* OverlayInnerShadowCircleExampleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OverlayInnerShadowCircleExampleViewController.h; sourceTree = "<group>"; };
+		B6F300012FFF000000000001 /* OverlayInnerShadowCircleExampleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OverlayInnerShadowCircleExampleViewController.m; sourceTree = "<group>"; };
+		B6F310002FFF000000000001 /* OverlayOuterGlowCircleExampleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OverlayOuterGlowCircleExampleViewController.h; sourceTree = "<group>"; };
+		B6F310012FFF000000000001 /* OverlayOuterGlowCircleExampleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OverlayOuterGlowCircleExampleViewController.m; sourceTree = "<group>"; };
+		B6F320002FFF000000000001 /* OverlayScanAnimationCircleExampleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OverlayScanAnimationCircleExampleViewController.h; sourceTree = "<group>"; };
+		B6F320012FFF000000000001 /* OverlayScanAnimationCircleExampleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OverlayScanAnimationCircleExampleViewController.m; sourceTree = "<group>"; };
+		B6F330002FFF000000000001 /* OverlayPulseAnimationCircleExampleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OverlayPulseAnimationCircleExampleViewController.h; sourceTree = "<group>"; };
+		B6F330012FFF000000000001 /* OverlayPulseAnimationCircleExampleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OverlayPulseAnimationCircleExampleViewController.m; sourceTree = "<group>"; };
+		B6F340002FFF000000000001 /* OverlayRadiusBreathingCircleExampleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OverlayRadiusBreathingCircleExampleViewController.h; sourceTree = "<group>"; };
+		B6F340012FFF000000000001 /* OverlayRadiusBreathingCircleExampleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OverlayRadiusBreathingCircleExampleViewController.m; sourceTree = "<group>"; };
+		B6F350002FFF000000000001 /* OverlayLevelExampleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OverlayLevelExampleViewController.h; sourceTree = "<group>"; };
+		B6F350012FFF000000000001 /* OverlayLevelExampleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OverlayLevelExampleViewController.m; sourceTree = "<group>"; };
+		B6F360002FFF000000000001 /* OverlayGradientPolylineExampleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OverlayGradientPolylineExampleViewController.h; sourceTree = "<group>"; };
+		B6F360012FFF000000000001 /* OverlayGradientPolylineExampleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OverlayGradientPolylineExampleViewController.m; sourceTree = "<group>"; };
+		C140E37BB35943259273C298 /* MTCMockRouteLocationProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTCMockRouteLocationProvider.m; sourceTree = "<group>"; };
+		C26001002FFF000000000001 /* OverlayMarkerCollisionBehaviorExampleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OverlayMarkerCollisionBehaviorExampleViewController.h; sourceTree = "<group>"; };
+		C26001012FFF000000000001 /* OverlayMarkerCollisionBehaviorExampleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OverlayMarkerCollisionBehaviorExampleViewController.m; sourceTree = "<group>"; };
+		C8B410013020D00000000001 /* OverlayBasicClusterExampleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OverlayBasicClusterExampleViewController.h; sourceTree = "<group>"; };
+		C8B410023020D00000000001 /* OverlayBasicClusterExampleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OverlayBasicClusterExampleViewController.m; sourceTree = "<group>"; };
+		C8B410053020D00000000001 /* cluster_sample_points.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = cluster_sample_points.json; sourceTree = "<group>"; };
+		C9A100022026090800000001 /* MTCMapContentPaddingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTCMapContentPaddingViewController.h; sourceTree = "<group>"; };
+		C9A100032026090800000001 /* MTCMapContentPaddingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTCMapContentPaddingViewController.m; sourceTree = "<group>"; };
+		CD1000113021400000000011 /* singapore_mock_route_driving_city_roads.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = singapore_mock_route_driving_city_roads.json; sourceTree = "<group>"; };
+		CD1000123021400000000012 /* singapore_mock_route_driving_expressway.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = singapore_mock_route_driving_expressway.json; sourceTree = "<group>"; };
+		CD1000133021400000000013 /* singapore_mock_route_cycling_city_roads.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = singapore_mock_route_cycling_city_roads.json; sourceTree = "<group>"; };
+		CD1000143021400000000014 /* singapore_mock_route_walking_city_roads.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = singapore_mock_route_walking_city_roads.json; sourceTree = "<group>"; };
+		D3A500012026092300000001 /* MTCToolListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTCToolListViewController.h; sourceTree = "<group>"; };
+		D3A500022026092300000001 /* MTCToolListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTCToolListViewController.m; sourceTree = "<group>"; };
+		E1A100032FE3000000000001 /* OverlayBasicMarkerEffectTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayBasicMarkerEffectTest.swift; sourceTree = "<group>"; };
+		E1A100042FE3000000000001 /* MaptecMapsExampleUITestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaptecMapsExampleUITestCase.swift; sourceTree = "<group>"; };
+		E1A100052FE3000000000002 /* MTCExampleTestAccessibility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTCExampleTestAccessibility.swift; sourceTree = "<group>"; };
+		E1A100112FE3000000000001 /* MTCExampleTestAccessibility.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTCExampleTestAccessibility.h; sourceTree = "<group>"; };
+		E1A100122FE3000000000001 /* MTCExampleTestAccessibility.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTCExampleTestAccessibility.m; sourceTree = "<group>"; };
+		E1A100172FE3000000000001 /* MTCUITestQuiescence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTCUITestQuiescence.swift; sourceTree = "<group>"; };
+		E1A100192FE3000000000001 /* MTCUITestQuiescence.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTCUITestQuiescence.m; sourceTree = "<group>"; };
+		E1A1001B2FE3000000000001 /* OverlayBasicMarkerEffectTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayBasicMarkerEffectTestCase.swift; sourceTree = "<group>"; };
+		E1A1001E2FE3000000000001 /* DemoCatalogNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoCatalogNavigation.swift; sourceTree = "<group>"; };
+		E1A100202FE3000000000001 /* MapTestHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapTestHelper.swift; sourceTree = "<group>"; };
+		E1A100222FE3000000000001 /* ExampleSettingsSheetHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleSettingsSheetHelper.swift; sourceTree = "<group>"; };
+		E1A100242FE3000000000001 /* MTCExampleMapTestSupport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTCExampleMapTestSupport.h; sourceTree = "<group>"; };
+		E1A100252FE3000000000001 /* MTCExampleMapTestSupport.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTCExampleMapTestSupport.m; sourceTree = "<group>"; };
+		E1A100272FE3000000000001 /* OverlayBasicCircleEffectTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayBasicCircleEffectTestCase.swift; sourceTree = "<group>"; };
+		E1A100282FE3000000000001 /* OverlayBasicCircleEffectTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayBasicCircleEffectTest.swift; sourceTree = "<group>"; };
+		E1A1002B2FE3000000000001 /* OverlayBasicPolylineEffectTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayBasicPolylineEffectTestCase.swift; sourceTree = "<group>"; };
+		E1A1002C2FE3000000000001 /* OverlayBasicPolylineEffectTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayBasicPolylineEffectTest.swift; sourceTree = "<group>"; };
+		E1A1002F2FE3000000000001 /* OverlayBasicPolygonEffectTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayBasicPolygonEffectTestCase.swift; sourceTree = "<group>"; };
+		E1A100302FE3000000000001 /* OverlayBasicPolygonEffectTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayBasicPolygonEffectTest.swift; sourceTree = "<group>"; };
+		E1A100332FE3000000000001 /* MapGestureScreenTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapGestureScreenTest.swift; sourceTree = "<group>"; };
+		E1A100412FE3000000000001 /* MapCompassScreenTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapCompassScreenTest.swift; sourceTree = "<group>"; };
+		E1A100432FE3000000000001 /* MapScaleScreenTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapScaleScreenTest.swift; sourceTree = "<group>"; };
+		E1A100452FE3000000000001 /* MapZoomScreenTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapZoomScreenTest.swift; sourceTree = "<group>"; };
+		E1A100472FE3000000000001 /* MapLogoScreenTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapLogoScreenTest.swift; sourceTree = "<group>"; };
+		E1A100492FE3000000000001 /* MapDayNightScreenTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapDayNightScreenTest.swift; sourceTree = "<group>"; };
+		E1A1004B2FE3000000000001 /* MapGestureCoordinationScreenTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapGestureCoordinationScreenTest.swift; sourceTree = "<group>"; };
+		E1A1004D2FE3000000000001 /* MapGestureThresholdScreenTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapGestureThresholdScreenTest.swift; sourceTree = "<group>"; };
+		E1A1004F2FE3000000000001 /* OverlayMarkerAnimationEffectTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayMarkerAnimationEffectTest.swift; sourceTree = "<group>"; };
+		E1A100512FE3000000000001 /* OverlaySdfMarkerEffectTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlaySdfMarkerEffectTest.swift; sourceTree = "<group>"; };
+		E1A100532FE3000000000001 /* WebServiceSearchApiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServiceSearchApiTests.swift; sourceTree = "<group>"; };
+		E1A100552FE3000000000001 /* MapStyleScreenTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapStyleScreenTest.swift; sourceTree = "<group>"; };
+		E1A100572FE3000000000001 /* MapTrafficScreenTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapTrafficScreenTest.swift; sourceTree = "<group>"; };
+		E1A100592FE3000000000001 /* LocationLayerScreenTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationLayerScreenTest.swift; sourceTree = "<group>"; };
+		E1A1005B2FE3000000000001 /* PoiClickScreenTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoiClickScreenTest.swift; sourceTree = "<group>"; };
+		E1A1005D2FE3000000000001 /* HeatmapBasicEffectTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeatmapBasicEffectTest.swift; sourceTree = "<group>"; };
+		E1A1005F2FE3000000000001 /* PointClusterBasicScreenTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointClusterBasicScreenTest.swift; sourceTree = "<group>"; };
+		E1A100612FE3000000000001 /* InfoWindowBasicEffectTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoWindowBasicEffectTest.swift; sourceTree = "<group>"; };
+		E1A100632FE3000000000001 /* OverlayZOrderEffectTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayZOrderEffectTest.swift; sourceTree = "<group>"; };
+		E1A100652FE3000000000001 /* MapGestureOtherSettingsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapGestureOtherSettingsTest.swift; sourceTree = "<group>"; };
+		E1A100672FE3000000000001 /* WebServiceAdvancedApiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServiceAdvancedApiTests.swift; sourceTree = "<group>"; };
+		E1A100692FE3000000000001 /* MapEventListenerScreenTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapEventListenerScreenTest.swift; sourceTree = "<group>"; };
+		E1A1006B2FE3000000000001 /* MapViewPortScreenTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewPortScreenTest.swift; sourceTree = "<group>"; };
+		E1A1006D2FE3000000000001 /* AuthConfigScreenTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthConfigScreenTest.swift; sourceTree = "<group>"; };
+		E1A1006F2FE3000000000001 /* GeofenceCircleScreenTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeofenceCircleScreenTest.swift; sourceTree = "<group>"; };
+		E1A100712FE3000000000001 /* GeofencePolygonScreenTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeofencePolygonScreenTest.swift; sourceTree = "<group>"; };
+		E1A100732FE3000000000001 /* OverlayDraggableCircleExampleTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayDraggableCircleExampleTest.swift; sourceTree = "<group>"; };
+		E1A100752FE3000000000001 /* OverlayLineCapPolylineExampleTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayLineCapPolylineExampleTest.swift; sourceTree = "<group>"; };
+		E1A100772FE3000000000001 /* OverlayDirectionalArrowPolylineExampleTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayDirectionalArrowPolylineExampleTest.swift; sourceTree = "<group>"; };
+		E1A100792FE3000000000001 /* OverlayGlowPolylineExampleTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayGlowPolylineExampleTest.swift; sourceTree = "<group>"; };
+		E1A1007B2FE3000000000001 /* OverlayPulseAnimationCircleExampleTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayPulseAnimationCircleExampleTest.swift; sourceTree = "<group>"; };
+		E1A1007D2FE3000000000001 /* OverlayRadiusBreathingCircleExampleTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayRadiusBreathingCircleExampleTest.swift; sourceTree = "<group>"; };
+		E1A1007F2FE3000000000001 /* OverlayScanAnimationCircleExampleTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayScanAnimationCircleExampleTest.swift; sourceTree = "<group>"; };
+		E1A100812FE3000000000001 /* OverlayOuterGlowCircleExampleTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayOuterGlowCircleExampleTest.swift; sourceTree = "<group>"; };
+		E1A100832FE3000000000001 /* OverlayInnerShadowCircleExampleTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayInnerShadowCircleExampleTest.swift; sourceTree = "<group>"; };
+		E1A100852FE3000000000001 /* OverlayPatternFillPolygonExampleTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayPatternFillPolygonExampleTest.swift; sourceTree = "<group>"; };
+		E1A100872FE3000000000001 /* OverlayInteractivePolygonExampleTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayInteractivePolygonExampleTest.swift; sourceTree = "<group>"; };
+		E1A100892FE3000000000001 /* OverlayTranslatePolygonExampleTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayTranslatePolygonExampleTest.swift; sourceTree = "<group>"; };
+		E1A1008B2FE3000000000001 /* OverlayNetworkImageMarkerExampleTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayNetworkImageMarkerExampleTest.swift; sourceTree = "<group>"; };
+		E1A1008D2FE3000000000001 /* OverlayZoomScalingMarkerExampleTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayZoomScalingMarkerExampleTest.swift; sourceTree = "<group>"; };
+		E1A1008F2FE3000000000001 /* MTCFloatInfoRichTextTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTCFloatInfoRichTextTest.swift; sourceTree = "<group>"; };
+		E1A100912FE3000000000001 /* MTCGeometryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTCGeometryTests.swift; sourceTree = "<group>"; };
+		E1A101012FE3000000000001 /* MTCCameraAnimationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTCCameraAnimationTests.swift; sourceTree = "<group>"; };
+		E1A101072FE3000000000001 /* MapRenderScreenTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapRenderScreenTest.swift; sourceTree = "<group>"; };
+		E1A101092FE3000000000001 /* OverlayEqualDistanceCircleExampleTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayEqualDistanceCircleExampleTest.swift; sourceTree = "<group>"; };
+		E1A101152FE3000000000001 /* A0_PreflightSetupTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = A0_PreflightSetupTests.swift; sourceTree = "<group>"; };
+		E2ECB885CAB34AA5B54CDE4F /* MTCMockRouteLocationProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTCMockRouteLocationProvider.h; sourceTree = "<group>"; };
+		F1A100012026090200000001 /* MTCMapScreenshotViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTCMapScreenshotViewController.h; sourceTree = "<group>"; };
+		F1A100022026090200000001 /* MTCMapScreenshotViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTCMapScreenshotViewController.m; sourceTree = "<group>"; };
+		F1A100032026090200000001 /* MTCMapScreenshotPlaybackViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTCMapScreenshotPlaybackViewController.h; sourceTree = "<group>"; };
+		F1A100042026090200000001 /* MTCMapScreenshotPlaybackViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTCMapScreenshotPlaybackViewController.m; sourceTree = "<group>"; };
+		af66ed90ea3a4d3b8a18cfaf /* MTCMapLimitViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTCMapLimitViewController.m; sourceTree = "<group>"; };
+		dd90f25d3bfe4000b772b096 /* MTCMapLimitViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTCMapLimitViewController.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8C1000082FE2000000000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C1000042FE2000000000001 /* MaptecMapsKit.xcframework in Frameworks */,
+				A1346652300E279900AC916F /* MaptecSearchKit.xcframework in Frameworks */,
+				A1346669300E3E0800AC916F /* MaptecFoundationKit.xcframework in Frameworks */,
+				5C5C0E4A933AA066C967F7AC /* Pods_MaptecMapsExample.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5B4B98471D0971FFE18DC705 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				916F699E7011754B48591266 /* Pods-MaptecMapsExample.debug.xcconfig */,
+				4A194009CF04C0DE746A0A6F /* Pods-MaptecMapsExample.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8C1000092FE2000000000001 = {
+			isa = PBXGroup;
+			children = (
+				2C5B0EBA300F66C50011AA63 /* images.xcassets */,
+				8C10000C2FF7000000000001 /* Configs */,
+				8C1000162FE2000000000001 /* MaptecMapsExample */,
+				8C1000182FE2000000000001 /* Frameworks */,
+				8C1000192FE2000000000001 /* Products */,
+				5B4B98471D0971FFE18DC705 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		8C10000C2FF7000000000001 /* Configs */ = {
+			isa = PBXGroup;
+			children = (
+				8C10000A2FF7000000000001 /* MaptecMapsExampleDebug.xcconfig */,
+				8C10000B2FF7000000000001 /* MaptecMapsExampleRelease.xcconfig */,
+			);
+			path = Configs;
+			sourceTree = "<group>";
+		};
+		8C1000162FE2000000000001 /* MaptecMapsExample */ = {
+			isa = PBXGroup;
+			children = (
+				A13462443004FF7D00AC916F /* WebServices */,
+				A12AD744300114290080D773 /* Locations */,
+				A12AD7173000C5050080D773 /* MapInterations */,
+				A12AD7013000BD9F0080D773 /* Mains */,
+				A12AD6E72FFCE9440080D773 /* Overlays */,
+				A16A51F62FED0021004982F1 /* BizKits */,
+				8C1000102FE2000000000001 /* AppDelegate.h */,
+				8C1000112FE2000000000001 /* AppDelegate.m */,
+				8C1000802FE2000000000001 /* SceneDelegate.h */,
+				8C1000812FE2000000000001 /* SceneDelegate.m */,
+				8C1000502FE2000000000001 /* ExampleHomeViewController.h */,
+				8C1000512FE2000000000001 /* ExampleHomeViewController.m */,
+				8C1000542FE2000000000001 /* ExampleSettingsSheetView.h */,
+				8C1000552FE2000000000001 /* ExampleSettingsSheetView.m */,
+				A12AF79E303FE44D00E24A24 /* MTCLoggerConfig.plist */,
+				A1LOC0013020ACC300EE9A1E /* Localizable.xcstrings */,
+				8C1000142FE2000000000001 /* Info.plist */,
+				8C1000152FE2000000000001 /* main.m */,
+			);
+			path = MaptecMapsExample;
+			sourceTree = "<group>";
+		};
+		8C1000182FE2000000000001 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A1346668300E3E0800AC916F /* MaptecFoundationKit.xcframework */,
+				A1346651300E279900AC916F /* MaptecSearchKit.xcframework */,
+				2C144D172FECD72C00485658 /* LookinServer.framework */,
+				8C1000172FE2000000000001 /* MaptecMapsKit.xcframework */,
+				8AC0285A51906BE03A92F2F8 /* Pods_MaptecMapsExample.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8C1000192FE2000000000001 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8C1000072FE2000000000001 /* MaptecMapsExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A12AD6E72FFCE9440080D773 /* Overlays */ = {
+			isa = PBXGroup;
+			children = (
+				A13466773016FD8600AC916F /* Heatmap */,
+				C8B410003020D00000000001 /* Cluster */,
+				A13463003008B00000AC916F /* BasicMarker */,
+				B6F290032FFF000000000001 /* BasicPolygon */,
+				B6F2A0032FFF000000000001 /* PatternFillPolygon */,
+				B6F2B0032FFF000000000001 /* TranslatePolygon */,
+				B6F2C0032FFF000000000001 /* InteractivePolygon */,
+				B6F250032FFF000000000001 /* BasicPolyline */,
+				B6F260032FFF000000000001 /* GlowPolyline */,
+				B6F270032FFF000000000001 /* DirectionalArrowPolyline */,
+				B6F280032FFF000000000001 /* LineCapPolyline */,
+				B6F360032FFF000000000001 /* GradientPolyline */,
+				B6F2D0032FFF000000000001 /* BasicCircle */,
+				B6F2E0032FFF000000000001 /* EqualDistanceCircle */,
+				B6F2F0032FFF000000000001 /* DraggableCircle */,
+				B6F300032FFF000000000001 /* InnerShadowCircle */,
+				B6F310032FFF000000000001 /* OuterGlowCircle */,
+				B6F320032FFF000000000001 /* ScanAnimationCircle */,
+				B6F330032FFF000000000001 /* PulseAnimationCircle */,
+				B6F340032FFF000000000001 /* RadiusBreathingCircle */,
+				B6F210032FFF000000000001 /* ZoomScalingMarker */,
+				B6F220032FFF000000000001 /* NetworkImageMarker */,
+				B6F230032FFF000000000001 /* SDFColorMarker */,
+				B6F240032FFF000000000001 /* MarkerAnimation */,
+				B6F245032FFF000000000001 /* MarkerMovement */,
+				C26001032FFF000000000001 /* CollisionBehavior */,
+				A13462333004E6F400AC916F /* GEOFencing */,
+				A13462293004B0BA00AC916F /* FloatInfoWindow */,
+				B6F350032FFF000000000001 /* Level */,
+			);
+			path = Overlays;
+			sourceTree = "<group>";
+		};
+		A12AD7013000BD9F0080D773 /* Mains */ = {
+			isa = PBXGroup;
+			children = (
+				A12AD7023000BDF00080D773 /* MTCAuthConfigViewController.h */,
+				A12AD7033000BDF00080D773 /* MTCAuthConfigViewController.m */,
+				A12AD7053000BE260080D773 /* MTCMapListViewController.h */,
+				A12AD7063000BE260080D773 /* MTCMapListViewController.m */,
+				A12AD7083000BE4F0080D773 /* MTCOverlayListViewController.h */,
+				A12AD7093000BE4F0080D773 /* MTCOverlayListViewController.m */,
+				A12AD70B3000BE840080D773 /* MTCMapInteractionsViewController.h */,
+				A12AD70C3000BE840080D773 /* MTCMapInteractionsViewController.m */,
+				A12AD7143000BF4C0080D773 /* MTCMapWebServiceListViewController.h */,
+				A12AD7153000BF4C0080D773 /* MTCMapWebServiceListViewController.m */,
+				D3A500012026092300000001 /* MTCToolListViewController.h */,
+				D3A500022026092300000001 /* MTCToolListViewController.m */,
+			);
+			path = Mains;
+			sourceTree = "<group>";
+		};
+		A12AD7173000C5050080D773 /* MapInterations */ = {
+			isa = PBXGroup;
+			children = (
+				A12AD7183000C62C0080D773 /* MTCMapUIListViewController.h */,
+				A12AD7193000C62C0080D773 /* MTCMapUIListViewController.m */,
+				A12AD71B3000C6590080D773 /* MTCMapGestureListViewController.h */,
+				A12AD71C3000C6590080D773 /* MTCMapGestureListViewController.m */,
+				B6F150002FFF000000000001 /* MTCMapGestureControlViewController.h */,
+				B6F150012FFF000000000001 /* MTCMapGestureControlViewController.m */,
+				B6F160002FFF000000000001 /* MTCMapGestureCoordinationViewController.h */,
+				B6F160012FFF000000000001 /* MTCMapGestureCoordinationViewController.m */,
+				B6F170002FFF000000000001 /* MTCMapGestureDoubleClickDelayViewController.h */,
+				B6F170012FFF000000000001 /* MTCMapGestureDoubleClickDelayViewController.m */,
+				B6F180002FFF000000000001 /* MTCMapGestureZoomCenterModeViewController.h */,
+				B6F180012FFF000000000001 /* MTCMapGestureZoomCenterModeViewController.m */,
+				B6F190002FFF000000000001 /* MTCMapGestureDoubleTapZoomFactorViewController.h */,
+				B6F190012FFF000000000001 /* MTCMapGestureDoubleTapZoomFactorViewController.m */,
+				B6F1A0002FFF000000000001 /* MTCMapGestureTwoFingerTapZoomResetViewController.h */,
+				B6F1A0012FFF000000000001 /* MTCMapGestureTwoFingerTapZoomResetViewController.m */,
+				B6F1B0002FFF000000000001 /* MTCMapGestureDoubleTapPitchResetViewController.h */,
+				B6F1B0012FFF000000000001 /* MTCMapGestureDoubleTapPitchResetViewController.m */,
+				B6F1C0002FFF000000000001 /* MTCMapGestureZoomAnimationDurationViewController.h */,
+				B6F1C0012FFF000000000001 /* MTCMapGestureZoomAnimationDurationViewController.m */,
+				B6F1D0002FFF000000000001 /* MTCMapGestureRotateBearingRangeViewController.h */,
+				B6F1D0012FFF000000000001 /* MTCMapGestureRotateBearingRangeViewController.m */,
+				B6F1E0002FFF000000000001 /* MTCMapGestureResistanceThresholdViewController.h */,
+				B6F1E0012FFF000000000001 /* MTCMapGestureResistanceThresholdViewController.m */,
+				B6F1F0002FFF000000000001 /* MTCMapGestureInertialScrollDurationViewController.h */,
+				B6F1F0012FFF000000000001 /* MTCMapGestureInertialScrollDurationViewController.m */,
+				A12AD71E3000C6730080D773 /* MTCMapLocationViewController.h */,
+				A12AD71F3000C6730080D773 /* MTCMapLocationViewController.m */,
+				A12AD7213000C6840080D773 /* MTCMapEventListViewController.h */,
+				A12AD7223000C6840080D773 /* MTCMapEventListViewController.m */,
+				A12AD7243000C6A70080D773 /* MTCMapPOIsViewController.h */,
+				A12AD7253000C6A70080D773 /* MTCMapPOIsViewController.m */,
+				A12AD7413000E0DC0080D773 /* MTCExampleMarkModel.h */,
+				A12AD7423000E0DC0080D773 /* MTCExampleMarkModel.m */,
+				A12AD7373000DCDE0080D773 /* Maps */,
+				A12AD7273000CCF70080D773 /* MapUIs */,
+			);
+			path = MapInterations;
+			sourceTree = "<group>";
+		};
+		A12AD7273000CCF70080D773 /* MapUIs */ = {
+			isa = PBXGroup;
+			children = (
+				A12AD7303000CDB80080D773 /* MTCExampleZoomViewController.h */,
+				A12AD7313000CDB80080D773 /* MTCExampleZoomViewController.m */,
+				A12AD7283000CDB80080D773 /* MTCExampleCompassViewController.h */,
+				A12AD7293000CDB80080D773 /* MTCExampleCompassViewController.m */,
+				A12AD72E3000CDB80080D773 /* MTCExampleScaleBarViewController.h */,
+				A12AD72F3000CDB80080D773 /* MTCExampleScaleBarViewController.m */,
+				A12AD72A3000CDB80080D773 /* MTCExampleDayNightViewController.h */,
+				A12AD72B3000CDB80080D773 /* MTCExampleDayNightViewController.m */,
+				A12AD72C3000CDB80080D773 /* MTCExampleLogoViewController.h */,
+				A12AD72D3000CDB80080D773 /* MTCExampleLogoViewController.m */,
+			);
+			path = MapUIs;
+			sourceTree = "<group>";
+		};
+		A12AD7373000DCDE0080D773 /* Maps */ = {
+			isa = PBXGroup;
+			children = (
+				A12AD7383000DD340080D773 /* MTCMapAddViewController.h */,
+				A12AD7393000DD340080D773 /* MTCMapAddViewController.m */,
+				A12AD73B3000DD7C0080D773 /* MTCMapStyleViewController.h */,
+				A12AD73C3000DD7C0080D773 /* MTCMapStyleViewController.m */,
+				A12AD73E3000DDC60080D773 /* MTCMapViewPortController.h */,
+				A12AD73F3000DDC60080D773 /* MTCMapViewPortController.m */,
+				C9A100022026090800000001 /* MTCMapContentPaddingViewController.h */,
+				C9A100032026090800000001 /* MTCMapContentPaddingViewController.m */,
+				dd90f25d3bfe4000b772b096 /* MTCMapLimitViewController.h */,
+				af66ed90ea3a4d3b8a18cfaf /* MTCMapLimitViewController.m */,
+				A102AE1A3036CC560021AE1D /* MTCRouteConditionViewController.h */,
+				A102AE1B3036CC560021AE1D /* MTCRouteConditionViewController.m */,
+				F1A100012026090200000001 /* MTCMapScreenshotViewController.h */,
+				F1A100022026090200000001 /* MTCMapScreenshotViewController.m */,
+				F1A100032026090200000001 /* MTCMapScreenshotPlaybackViewController.h */,
+				F1A100042026090200000001 /* MTCMapScreenshotPlaybackViewController.m */,
+				A12AD7503008D0000080D773 /* MTCGeometryCalculatorViewController.h */,
+				A12AD7513008D0000080D773 /* MTCGeometryCalculatorViewController.mm */,
+			);
+			path = Maps;
+			sourceTree = "<group>";
+		};
+		A12AD744300114290080D773 /* Locations */ = {
+			isa = PBXGroup;
+			children = (
+				A12AD7453001145A0080D773 /* MTCMapLocationButtonController.h */,
+				A12AD7463001145A0080D773 /* MTCMapLocationButtonController.m */,
+				A12AD7483001146F0080D773 /* MTCMapLocationLayerController.h */,
+				A12AD7493001146F0080D773 /* MTCMapLocationLayerController.m */,
+				E2ECB885CAB34AA5B54CDE4F /* MTCMockRouteLocationProvider.h */,
+				C140E37BB35943259273C298 /* MTCMockRouteLocationProvider.m */,
+				CD1000113021400000000011 /* singapore_mock_route_driving_city_roads.json */,
+				CD1000123021400000000012 /* singapore_mock_route_driving_expressway.json */,
+				CD1000133021400000000013 /* singapore_mock_route_cycling_city_roads.json */,
+				CD1000143021400000000014 /* singapore_mock_route_walking_city_roads.json */,
+			);
+			path = Locations;
+			sourceTree = "<group>";
+		};
+		A13462293004B0BA00AC916F /* FloatInfoWindow */ = {
+			isa = PBXGroup;
+			children = (
+				A134622A3004B0E500AC916F /* MTCFloatInfoSimpleViewController.h */,
+				A134622B3004B0E500AC916F /* MTCFloatInfoSimpleViewController.m */,
+				A134622D3004B16E00AC916F /* MTCFloatInfoStyleViewController.h */,
+				A134622E3004B16E00AC916F /* MTCFloatInfoStyleViewController.m */,
+				A13462303004B19100AC916F /* MTCFloatInfoRichTextViewController.h */,
+				A13462313004B19100AC916F /* MTCFloatInfoRichTextViewController.m */,
+				A13462373004D10100AC916F /* MTCFloatInfoDemoSupport.h */,
+				A13462383004D10100AC916F /* MTCFloatInfoDemoSupport.m */,
+			);
+			path = FloatInfoWindow;
+			sourceTree = "<group>";
+		};
+		A13462333004E6F400AC916F /* GEOFencing */ = {
+			isa = PBXGroup;
+			children = (
+				A134623A3004EF2400AC916F /* MTCGEOFencingCircleViewController.h */,
+				A134623B3004EF2400AC916F /* MTCGEOFencingCircleViewController.m */,
+				A134623C3004EF2400AC916F /* MTCGEOFencingPolygonViewController.h */,
+				A134623D3004EF2400AC916F /* MTCGEOFencingPolygonViewController.m */,
+				A134623E3004EF2400AC916F /* MTCGEOFencingSupport.h */,
+				A134623F3004EF2400AC916F /* MTCGEOFencingSupport.m */,
+			);
+			path = GEOFencing;
+			sourceTree = "<group>";
+		};
+		A13462443004FF7D00AC916F /* WebServices */ = {
+			isa = PBXGroup;
+			children = (
+				A1EC6E4B3020967000EE9A1E /* MTCMapRoute */,
+				A13462B6300636CE00AC916F /* WebSupport */,
+				A134629E300606B100AC916F /* MTCWebTextSearchViewController.h */,
+				A134629F300606B100AC916F /* MTCWebTextSearchViewController.m */,
+				A13462A1300606D000AC916F /* MTCWebNearbySearchViewController.h */,
+				A13462A2300606D000AC916F /* MTCWebNearbySearchViewController.m */,
+				A1EC6ECA30331A8900EE9A1E /* MTCWebAlongSearchViewController.h */,
+				A1EC6ECB30331A8900EE9A1E /* MTCWebAlongSearchViewController.m */,
+				A13462A4300606EC00AC916F /* MTCWebInputTipsViewController.h */,
+				A13462A5300606EC00AC916F /* MTCWebInputTipsViewController.m */,
+				A13462A73006070500AC916F /* MTCWebLocationDetailViewController.h */,
+				A13462A83006070500AC916F /* MTCWebLocationDetailViewController.m */,
+				A13462AA3006074300AC916F /* MTCWebGeoCodingViewController.h */,
+				A13462AB3006074300AC916F /* MTCWebGeoCodingViewController.m */,
+				A13462AD3006075900AC916F /* MTCWebReverseGeoCodingViewController.h */,
+				A13462AE3006075900AC916F /* MTCWebReverseGeoCodingViewController.m */,
+				A1EC6E493020705500EE9A1E /* MTCMapRouteViewController.h */,
+				A1EC6E4A3020705500EE9A1E /* MTCMapRouteViewController.m */,
+				A13466743012217400AC916F /* MTCWebAuthStatusViewController.h */,
+				A13466753012217400AC916F /* MTCWebAuthStatusViewController.m */,
+				A13462B3300608D800AC916F /* MTCWebSettingsFloatView.h */,
+				A13462B4300608D800AC916F /* MTCWebSettingsFloatView.m */,
+				A1EC6E68302099B500EE9A1E /* MTCWebRoutePanel.h */,
+				A1EC6E69302099B500EE9A1E /* MTCWebRoutePanel.m */,
+			);
+			path = WebServices;
+			sourceTree = "<group>";
+		};
+		A13462B6300636CE00AC916F /* WebSupport */ = {
+			isa = PBXGroup;
+			children = (
+				A13462B7300648A700AC916F /* MTCWebSupportUtil.h */,
+				A13462B8300648A700AC916F /* MTCWebSupportUtil.m */,
+				A13462C13008F40100AC916F /* MTCPlace+MTCPrettyFork.h */,
+				A13462C23008F40100AC916F /* MTCPlace+MTCPrettyFork.m */,
+				A13462BA300659EC00AC916F /* MTCTextSearchRequestParams+MTCSupportFork.h */,
+				A13462BB300659EC00AC916F /* MTCTextSearchRequestParams+MTCSupportFork.m */,
+				A13462BD30077C0200AC916F /* MTCMTCWebDetailPopupView.h */,
+				A13462BE30077C0200AC916F /* MTCMTCWebDetailPopupView.m */,
+			);
+			path = WebSupport;
+			sourceTree = "<group>";
+		};
+		A13463003008B00000AC916F /* BasicMarker */ = {
+			isa = PBXGroup;
+			children = (
+				8C1000582FEE10C200000001 /* OverlayBasicMarkerExampleViewController.h */,
+				8C1000592FEE10C200000001 /* OverlayBasicMarkerExampleViewController.m */,
+			);
+			path = BasicMarker;
+			sourceTree = "<group>";
+		};
+		A13466773016FD8600AC916F /* Heatmap */ = {
+			isa = PBXGroup;
+			children = (
+				A13466783016FDF000AC916F /* MTCHeatmapBasicsViewController.h */,
+				A13466793016FDF000AC916F /* MTCHeatmapBasicsViewController.m */,
+				A134667C3016FDF000AC916F /* heatmap_provider.json */,
+			);
+			path = Heatmap;
+			sourceTree = "<group>";
+		};
+		A16A51F62FED0021004982F1 /* BizKits */ = {
+			isa = PBXGroup;
+			children = (
+				A1LOC0033020ACC300EE9A1E /* MTCExampleDemoLocalization.h */,
+				A1LOC0043020ACC300EE9A1E /* MTCExampleDemoLocalization.m */,
+				A1LOC0063020ACC300EE9A1E /* MTCExampleLanguageToggleControl.h */,
+				A1LOC0073020ACC300EE9A1E /* MTCExampleLanguageToggleControl.m */,
+				A16A51F72FED0062004982F1 /* MTCExampleMapBizUtil.h */,
+				A16A51F82FED0062004982F1 /* MTCExampleMapBizUtil.m */,
+				B6F0FFFF2FFF000000000001 /* MTCExampleToastView.h */,
+				B6F100002FFF000000000001 /* MTCExampleToastView.m */,
+				A1EC6E6D3020BA8A00EE9A1E /* MTCExampleBaseViewController.h */,
+				A1EC6E6E3020BA8A00EE9A1E /* MTCExampleBaseViewController.m */,
+				E1A100112FE3000000000001 /* MTCExampleTestAccessibility.h */,
+				E1A100122FE3000000000001 /* MTCExampleTestAccessibility.m */,
+				E1A100242FE3000000000001 /* MTCExampleMapTestSupport.h */,
+				E1A100252FE3000000000001 /* MTCExampleMapTestSupport.m */,
+			);
+			path = BizKits;
+			sourceTree = "<group>";
+		};
+		A1EC6E4B3020967000EE9A1E /* MTCMapRoute */ = {
+			isa = PBXGroup;
+			children = (
+				A1EC6E5B302096EF00EE9A1E /* detail */,
+				A1EC6E61302096EF00EE9A1E /* plan */,
+			);
+			path = MTCMapRoute;
+			sourceTree = "<group>";
+		};
+		A1EC6E53302096EF00EE9A1E /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				A1EC6E4C302096EF00EE9A1E /* MTCMapRouteRendering.h */,
+				A1EC6E4D302096EF00EE9A1E /* MTCRoutePlanController+Internal.h */,
+				A1EC6E4E302096EF00EE9A1E /* MTCRoutePlanModels+Internal.h */,
+				A1EC6E4F302096EF00EE9A1E /* MTCRoutePlanSession.h */,
+				A1EC6E50302096EF00EE9A1E /* MTCRoutePlanSession.m */,
+				A1EC6E51302096EF00EE9A1E /* MTCRoutePlanStateStore.h */,
+				A1EC6E52302096EF00EE9A1E /* MTCRoutePlanStateStore.m */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		A1EC6E56302096EF00EE9A1E /* Rendering */ = {
+			isa = PBXGroup;
+			children = (
+				A1EC6E54302096EF00EE9A1E /* MTCPolylineRouteRenderer.h */,
+				A1EC6E55302096EF00EE9A1E /* MTCPolylineRouteRenderer.m */,
+			);
+			path = Rendering;
+			sourceTree = "<group>";
+		};
+		A1EC6E5A302096EF00EE9A1E /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				A1EC6E57302096EF00EE9A1E /* MTCRoutePlanningService.h */,
+				A1EC6E58302096EF00EE9A1E /* MTCSearchKitRoutePlanningService.h */,
+				A1EC6E59302096EF00EE9A1E /* MTCSearchKitRoutePlanningService.m */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		A1EC6E5B302096EF00EE9A1E /* detail */ = {
+			isa = PBXGroup;
+			children = (
+				A1EC6E53302096EF00EE9A1E /* Core */,
+				A1EC6E56302096EF00EE9A1E /* Rendering */,
+				A1EC6E5A302096EF00EE9A1E /* Service */,
+			);
+			path = detail;
+			sourceTree = "<group>";
+		};
+		A1EC6E61302096EF00EE9A1E /* plan */ = {
+			isa = PBXGroup;
+			children = (
+				A1EC6E5D302096EF00EE9A1E /* MTCRoutePlanController.h */,
+				A1EC6E5E302096EF00EE9A1E /* MTCRoutePlanController.m */,
+				A1EC6E5F302096EF00EE9A1E /* MTCRoutePlanModels.h */,
+				A1EC6E60302096EF00EE9A1E /* MTCRoutePlanModels.m */,
+			);
+			path = plan;
+			sourceTree = "<group>";
+		};
+		B6F210032FFF000000000001 /* ZoomScalingMarker */ = {
+			isa = PBXGroup;
+			children = (
+				B6F210002FFF000000000001 /* OverlayZoomScalingMarkerExampleViewController.h */,
+				B6F210012FFF000000000001 /* OverlayZoomScalingMarkerExampleViewController.m */,
+			);
+			path = ZoomScalingMarker;
+			sourceTree = "<group>";
+		};
+		B6F220032FFF000000000001 /* NetworkImageMarker */ = {
+			isa = PBXGroup;
+			children = (
+				B6F220002FFF000000000001 /* OverlayNetworkImageMarkerExampleViewController.h */,
+				B6F220012FFF000000000001 /* OverlayNetworkImageMarkerExampleViewController.m */,
+			);
+			path = NetworkImageMarker;
+			sourceTree = "<group>";
+		};
+		B6F230032FFF000000000001 /* SDFColorMarker */ = {
+			isa = PBXGroup;
+			children = (
+				B6F230002FFF000000000001 /* OverlaySDFColorMarkerExampleViewController.h */,
+				B6F230012FFF000000000001 /* OverlaySDFColorMarkerExampleViewController.m */,
+			);
+			path = SDFColorMarker;
+			sourceTree = "<group>";
+		};
+		B6F240032FFF000000000001 /* MarkerAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				B6F240002FFF000000000001 /* OverlayMarkerAnimationExampleViewController.h */,
+				B6F240012FFF000000000001 /* OverlayMarkerAnimationExampleViewController.m */,
+			);
+			path = MarkerAnimation;
+			sourceTree = "<group>";
+		};
+		B6F245032FFF000000000001 /* MarkerMovement */ = {
+			isa = PBXGroup;
+			children = (
+				B6F245002FFF000000000001 /* OverlayMarkerMovementExampleViewController.h */,
+				B6F245012FFF000000000001 /* OverlayMarkerMovementExampleViewController.m */,
+			);
+			path = MarkerMovement;
+			sourceTree = "<group>";
+		};
+		B6F250032FFF000000000001 /* BasicPolyline */ = {
+			isa = PBXGroup;
+			children = (
+				B6F250002FFF000000000001 /* OverlayBasicPolylineExampleViewController.h */,
+				B6F250012FFF000000000001 /* OverlayBasicPolylineExampleViewController.m */,
+			);
+			path = BasicPolyline;
+			sourceTree = "<group>";
+		};
+		B6F260032FFF000000000001 /* GlowPolyline */ = {
+			isa = PBXGroup;
+			children = (
+				B6F260002FFF000000000001 /* OverlayGlowPolylineExampleViewController.h */,
+				B6F260012FFF000000000001 /* OverlayGlowPolylineExampleViewController.m */,
+			);
+			path = GlowPolyline;
+			sourceTree = "<group>";
+		};
+		B6F270032FFF000000000001 /* DirectionalArrowPolyline */ = {
+			isa = PBXGroup;
+			children = (
+				B6F270002FFF000000000001 /* OverlayDirectionalArrowPolylineExampleViewController.h */,
+				B6F270012FFF000000000001 /* OverlayDirectionalArrowPolylineExampleViewController.m */,
+			);
+			path = DirectionalArrowPolyline;
+			sourceTree = "<group>";
+		};
+		B6F280032FFF000000000001 /* LineCapPolyline */ = {
+			isa = PBXGroup;
+			children = (
+				B6F280002FFF000000000001 /* OverlayLineCapPolylineExampleViewController.h */,
+				B6F280012FFF000000000001 /* OverlayLineCapPolylineExampleViewController.m */,
+			);
+			path = LineCapPolyline;
+			sourceTree = "<group>";
+		};
+		B6F290032FFF000000000001 /* BasicPolygon */ = {
+			isa = PBXGroup;
+			children = (
+				B6F290002FFF000000000001 /* OverlayBasicPolygonExampleViewController.h */,
+				B6F290012FFF000000000001 /* OverlayBasicPolygonExampleViewController.m */,
+			);
+			path = BasicPolygon;
+			sourceTree = "<group>";
+		};
+		B6F2A0032FFF000000000001 /* PatternFillPolygon */ = {
+			isa = PBXGroup;
+			children = (
+				B6F2A0002FFF000000000001 /* OverlayPatternFillPolygonExampleViewController.h */,
+				B6F2A0012FFF000000000001 /* OverlayPatternFillPolygonExampleViewController.m */,
+			);
+			path = PatternFillPolygon;
+			sourceTree = "<group>";
+		};
+		B6F2B0032FFF000000000001 /* TranslatePolygon */ = {
+			isa = PBXGroup;
+			children = (
+				B6F2B0002FFF000000000001 /* OverlayTranslatePolygonExampleViewController.h */,
+				B6F2B0012FFF000000000001 /* OverlayTranslatePolygonExampleViewController.m */,
+			);
+			path = TranslatePolygon;
+			sourceTree = "<group>";
+		};
+		B6F2C0032FFF000000000001 /* InteractivePolygon */ = {
+			isa = PBXGroup;
+			children = (
+				B6F2C0002FFF000000000001 /* OverlayInteractivePolygonExampleViewController.h */,
+				B6F2C0012FFF000000000001 /* OverlayInteractivePolygonExampleViewController.m */,
+			);
+			path = InteractivePolygon;
+			sourceTree = "<group>";
+		};
+		B6F2D0032FFF000000000001 /* BasicCircle */ = {
+			isa = PBXGroup;
+			children = (
+				B6F2D0002FFF000000000001 /* OverlayBasicCircleExampleViewController.h */,
+				B6F2D0012FFF000000000001 /* OverlayBasicCircleExampleViewController.m */,
+			);
+			path = BasicCircle;
+			sourceTree = "<group>";
+		};
+		B6F2E0032FFF000000000001 /* EqualDistanceCircle */ = {
+			isa = PBXGroup;
+			children = (
+				B6F2E0002FFF000000000001 /* OverlayEqualDistanceCircleExampleViewController.h */,
+				B6F2E0012FFF000000000001 /* OverlayEqualDistanceCircleExampleViewController.m */,
+			);
+			path = EqualDistanceCircle;
+			sourceTree = "<group>";
+		};
+		B6F2F0032FFF000000000001 /* DraggableCircle */ = {
+			isa = PBXGroup;
+			children = (
+				B6F2F0002FFF000000000001 /* OverlayDraggableCircleExampleViewController.h */,
+				B6F2F0012FFF000000000001 /* OverlayDraggableCircleExampleViewController.m */,
+			);
+			path = DraggableCircle;
+			sourceTree = "<group>";
+		};
+		B6F300032FFF000000000001 /* InnerShadowCircle */ = {
+			isa = PBXGroup;
+			children = (
+				B6F300002FFF000000000001 /* OverlayInnerShadowCircleExampleViewController.h */,
+				B6F300012FFF000000000001 /* OverlayInnerShadowCircleExampleViewController.m */,
+			);
+			path = InnerShadowCircle;
+			sourceTree = "<group>";
+		};
+		B6F310032FFF000000000001 /* OuterGlowCircle */ = {
+			isa = PBXGroup;
+			children = (
+				B6F310002FFF000000000001 /* OverlayOuterGlowCircleExampleViewController.h */,
+				B6F310012FFF000000000001 /* OverlayOuterGlowCircleExampleViewController.m */,
+			);
+			path = OuterGlowCircle;
+			sourceTree = "<group>";
+		};
+		B6F320032FFF000000000001 /* ScanAnimationCircle */ = {
+			isa = PBXGroup;
+			children = (
+				B6F320002FFF000000000001 /* OverlayScanAnimationCircleExampleViewController.h */,
+				B6F320012FFF000000000001 /* OverlayScanAnimationCircleExampleViewController.m */,
+			);
+			path = ScanAnimationCircle;
+			sourceTree = "<group>";
+		};
+		B6F330032FFF000000000001 /* PulseAnimationCircle */ = {
+			isa = PBXGroup;
+			children = (
+				B6F330002FFF000000000001 /* OverlayPulseAnimationCircleExampleViewController.h */,
+				B6F330012FFF000000000001 /* OverlayPulseAnimationCircleExampleViewController.m */,
+			);
+			path = PulseAnimationCircle;
+			sourceTree = "<group>";
+		};
+		B6F340032FFF000000000001 /* RadiusBreathingCircle */ = {
+			isa = PBXGroup;
+			children = (
+				B6F340002FFF000000000001 /* OverlayRadiusBreathingCircleExampleViewController.h */,
+				B6F340012FFF000000000001 /* OverlayRadiusBreathingCircleExampleViewController.m */,
+			);
+			path = RadiusBreathingCircle;
+			sourceTree = "<group>";
+		};
+		B6F350032FFF000000000001 /* Level */ = {
+			isa = PBXGroup;
+			children = (
+				B6F350002FFF000000000001 /* OverlayLevelExampleViewController.h */,
+				B6F350012FFF000000000001 /* OverlayLevelExampleViewController.m */,
+			);
+			path = Level;
+			sourceTree = "<group>";
+		};
+		B6F360032FFF000000000001 /* GradientPolyline */ = {
+			isa = PBXGroup;
+			children = (
+				B6F360002FFF000000000001 /* OverlayGradientPolylineExampleViewController.h */,
+				B6F360012FFF000000000001 /* OverlayGradientPolylineExampleViewController.m */,
+			);
+			path = GradientPolyline;
+			sourceTree = "<group>";
+		};
+		C26001032FFF000000000001 /* CollisionBehavior */ = {
+			isa = PBXGroup;
+			children = (
+				C26001002FFF000000000001 /* OverlayMarkerCollisionBehaviorExampleViewController.h */,
+				C26001012FFF000000000001 /* OverlayMarkerCollisionBehaviorExampleViewController.m */,
+			);
+			path = CollisionBehavior;
+			sourceTree = "<group>";
+		};
+		C8B410003020D00000000001 /* Cluster */ = {
+			isa = PBXGroup;
+			children = (
+				C8B410013020D00000000001 /* OverlayBasicClusterExampleViewController.h */,
+				C8B410023020D00000000001 /* OverlayBasicClusterExampleViewController.m */,
+				C8B410053020D00000000001 /* cluster_sample_points.json */,
+			);
+			path = Cluster;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8C1000202FE2000000000001 /* MaptecMapsExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C1000302FE2000000000001 /* Build configuration list for PBXNativeTarget "MaptecMapsExample" */;
+			buildPhases = (
+				02361ED4438D0291777318F9 /* [CP] Check Pods Manifest.lock */,
+				8C1000212FE2000000000001 /* Sources */,
+				8C1000082FE2000000000001 /* Frameworks */,
+				8C1000232FE2000000000001 /* Resources */,
+				8C1000062FE2000000000001 /* Embed Frameworks */,
+				BBF406299A2968AC470B9E9E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MaptecMapsExample;
+			productName = MaptecMapsExample;
+			productReference = 8C1000072FE2000000000001 /* MaptecMapsExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8C1000242FE2000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 2650;
+				TargetAttributes = {
+					8C1000202FE2000000000001 = {
+						CreatedOnToolsVersion = 26.5;
+					};
+					E1A100012FE3000000000001 = {
+						CreatedOnToolsVersion = 26.5;
+						TestTargetID = 8C1000202FE2000000000001;
+					};
+				};
+			};
+			buildConfigurationList = 8C1000312FE2000000000001 /* Build configuration list for PBXProject "MaptecMapsExample" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"zh-Hans",
+			);
+			mainGroup = 8C1000092FE2000000000001;
+			productRefGroup = 8C1000192FE2000000000001 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8C1000202FE2000000000001 /* MaptecMapsExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8C1000232FE2000000000001 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C5B0EBB300F66C50011AA63 /* images.xcassets in Resources */,
+				A134667B3016FDF000AC916F /* heatmap_provider.json in Resources */,
+				C8B410043020D00000000001 /* cluster_sample_points.json in Resources */,
+				CD1000013021400000000001 /* singapore_mock_route_driving_city_roads.json in Resources */,
+				A12AF79F303FE44D00E24A24 /* MTCLoggerConfig.plist in Resources */,
+				CD1000023021400000000002 /* singapore_mock_route_driving_expressway.json in Resources */,
+				CD1000033021400000000003 /* singapore_mock_route_cycling_city_roads.json in Resources */,
+				CD1000043021400000000004 /* singapore_mock_route_walking_city_roads.json in Resources */,
+				A1LOC0023020ACC300EE9A1E /* Localizable.xcstrings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		02361ED4438D0291777318F9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MaptecMapsExample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BBF406299A2968AC470B9E9E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MaptecMapsExample/Pods-MaptecMapsExample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MaptecMapsExample/Pods-MaptecMapsExample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MaptecMapsExample/Pods-MaptecMapsExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8C1000212FE2000000000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C1000012FE2000000000001 /* AppDelegate.m in Sources */,
+				8C1000822FE2000000000001 /* SceneDelegate.m in Sources */,
+				A13462403004EF2400AC916F /* MTCGEOFencingSupport.m in Sources */,
+				A13462413004EF2400AC916F /* MTCGEOFencingCircleViewController.m in Sources */,
+				A13462423004EF2400AC916F /* MTCGEOFencingPolygonViewController.m in Sources */,
+				A13466763012217400AC916F /* MTCWebAuthStatusViewController.m in Sources */,
+				A12AD74A3001146F0080D773 /* MTCMapLocationLayerController.m in Sources */,
+				865A264037274986B7184B29 /* MTCMockRouteLocationProvider.m in Sources */,
+				A12AD7233000C6840080D773 /* MTCMapEventListViewController.m in Sources */,
+				8C1000402FE2000000000001 /* ExampleHomeViewController.m in Sources */,
+				A134622F3004B16E00AC916F /* MTCFloatInfoStyleViewController.m in Sources */,
+				A12AD71D3000C6590080D773 /* MTCMapGestureListViewController.m in Sources */,
+				A12AD7043000BDF00080D773 /* MTCAuthConfigViewController.m in Sources */,
+				A16A51F92FED0062004982F1 /* MTCExampleMapBizUtil.m in Sources */,
+				A1LOC0053020ACC300EE9A1E /* MTCExampleDemoLocalization.m in Sources */,
+				A1LOC0083020ACC300EE9A1E /* MTCExampleLanguageToggleControl.m in Sources */,
+				A134667A3016FDF000AC916F /* MTCHeatmapBasicsViewController.m in Sources */,
+				B6F100012FFF000000000001 /* MTCExampleToastView.m in Sources */,
+				A13462AF3006075900AC916F /* MTCWebReverseGeoCodingViewController.m in Sources */,
+				A13462A3300606D000AC916F /* MTCWebNearbySearchViewController.m in Sources */,
+				A13462A6300606EC00AC916F /* MTCWebInputTipsViewController.m in Sources */,
+				A12AD7073000BE260080D773 /* MTCMapListViewController.m in Sources */,
+				A13462A93006070500AC916F /* MTCWebLocationDetailViewController.m in Sources */,
+				B6F150022FFF000000000001 /* MTCMapGestureControlViewController.m in Sources */,
+				B6F160022FFF000000000001 /* MTCMapGestureCoordinationViewController.m in Sources */,
+				B6F170022FFF000000000001 /* MTCMapGestureDoubleClickDelayViewController.m in Sources */,
+				B6F180022FFF000000000001 /* MTCMapGestureZoomCenterModeViewController.m in Sources */,
+				B6F190022FFF000000000001 /* MTCMapGestureDoubleTapZoomFactorViewController.m in Sources */,
+				B6F1A0022FFF000000000001 /* MTCMapGestureTwoFingerTapZoomResetViewController.m in Sources */,
+				B6F1B0022FFF000000000001 /* MTCMapGestureDoubleTapPitchResetViewController.m in Sources */,
+				B6F1C0022FFF000000000001 /* MTCMapGestureZoomAnimationDurationViewController.m in Sources */,
+				A13462BF30077C0200AC916F /* MTCMTCWebDetailPopupView.m in Sources */,
+				B6F1D0022FFF000000000001 /* MTCMapGestureRotateBearingRangeViewController.m in Sources */,
+				A1EC6E62302096EF00EE9A1E /* MTCSearchKitRoutePlanningService.m in Sources */,
+				A1EC6E63302096EF00EE9A1E /* MTCRoutePlanSession.m in Sources */,
+				A1EC6E64302096EF00EE9A1E /* MTCPolylineRouteRenderer.m in Sources */,
+				A1EC6E65302096EF00EE9A1E /* MTCRoutePlanStateStore.m in Sources */,
+				A1EC6E66302096EF00EE9A1E /* MTCRoutePlanController.m in Sources */,
+				A1EC6E67302096EF00EE9A1E /* MTCRoutePlanModels.m in Sources */,
+				A1EC6ECC30331A8900EE9A1E /* MTCWebAlongSearchViewController.m in Sources */,
+				B6F1E0022FFF000000000001 /* MTCMapGestureResistanceThresholdViewController.m in Sources */,
+				B6F1F0022FFF000000000001 /* MTCMapGestureInertialScrollDurationViewController.m in Sources */,
+				A12AD7323000CDB80080D773 /* MTCExampleCompassViewController.m in Sources */,
+				A12AD73D3000DD7C0080D773 /* MTCMapStyleViewController.m in Sources */,
+				A12AD7333000CDB80080D773 /* MTCExampleDayNightViewController.m in Sources */,
+				A12AD7343000CDB80080D773 /* MTCExampleLogoViewController.m in Sources */,
+				A12AD7353000CDB80080D773 /* MTCExampleZoomViewController.m in Sources */,
+				A12AD7363000CDB80080D773 /* MTCExampleScaleBarViewController.m in Sources */,
+				8C1000442FEE10C200000001 /* OverlayBasicMarkerExampleViewController.m in Sources */,
+				B6F290022FFF000000000001 /* OverlayBasicPolygonExampleViewController.m in Sources */,
+				B6F2A0022FFF000000000001 /* OverlayPatternFillPolygonExampleViewController.m in Sources */,
+				B6F2B0022FFF000000000001 /* OverlayTranslatePolygonExampleViewController.m in Sources */,
+				B6F2C0022FFF000000000001 /* OverlayInteractivePolygonExampleViewController.m in Sources */,
+				B6F250022FFF000000000001 /* OverlayBasicPolylineExampleViewController.m in Sources */,
+				B6F260022FFF000000000001 /* OverlayGlowPolylineExampleViewController.m in Sources */,
+				B6F270022FFF000000000001 /* OverlayDirectionalArrowPolylineExampleViewController.m in Sources */,
+				B6F280022FFF000000000001 /* OverlayLineCapPolylineExampleViewController.m in Sources */,
+				B6F360022FFF000000000001 /* OverlayGradientPolylineExampleViewController.m in Sources */,
+				B6F2D0022FFF000000000001 /* OverlayBasicCircleExampleViewController.m in Sources */,
+				B6F2E0022FFF000000000001 /* OverlayEqualDistanceCircleExampleViewController.m in Sources */,
+				B6F2F0022FFF000000000001 /* OverlayDraggableCircleExampleViewController.m in Sources */,
+				B6F300022FFF000000000001 /* OverlayInnerShadowCircleExampleViewController.m in Sources */,
+				B6F310022FFF000000000001 /* OverlayOuterGlowCircleExampleViewController.m in Sources */,
+				B6F320022FFF000000000001 /* OverlayScanAnimationCircleExampleViewController.m in Sources */,
+				B6F330022FFF000000000001 /* OverlayPulseAnimationCircleExampleViewController.m in Sources */,
+				B6F340022FFF000000000001 /* OverlayRadiusBreathingCircleExampleViewController.m in Sources */,
+				B6F350022FFF000000000001 /* OverlayLevelExampleViewController.m in Sources */,
+				C8B410033020D00000000001 /* OverlayBasicClusterExampleViewController.m in Sources */,
+				B6F210022FFF000000000001 /* OverlayZoomScalingMarkerExampleViewController.m in Sources */,
+				B6F220022FFF000000000001 /* OverlayNetworkImageMarkerExampleViewController.m in Sources */,
+				B6F230022FFF000000000001 /* OverlaySDFColorMarkerExampleViewController.m in Sources */,
+				B6F240022FFF000000000001 /* OverlayMarkerAnimationExampleViewController.m in Sources */,
+				B6F245022FFF000000000001 /* OverlayMarkerMovementExampleViewController.m in Sources */,
+				C26001022FFF000000000001 /* OverlayMarkerCollisionBehaviorExampleViewController.m in Sources */,
+				A12AD7473001145A0080D773 /* MTCMapLocationButtonController.m in Sources */,
+				A102AE1C3036CC560021AE1D /* MTCRouteConditionViewController.m in Sources */,
+				F1A100052026090200000001 /* MTCMapScreenshotViewController.m in Sources */,
+				F1A100062026090200000001 /* MTCMapScreenshotPlaybackViewController.m in Sources */,
+				A12AD7403000DDC60080D773 /* MTCMapViewPortController.m in Sources */,
+				C9A100012026090800000001 /* MTCMapContentPaddingViewController.m in Sources */,
+				A12AD7523008D0000080D773 /* MTCGeometryCalculatorViewController.mm in Sources */,
+				A12AD7263000C6A70080D773 /* MTCMapPOIsViewController.m in Sources */,
+				A12AD70A3000BE4F0080D773 /* MTCOverlayListViewController.m in Sources */,
+				A12AD7433000E0DC0080D773 /* MTCExampleMarkModel.m in Sources */,
+				A12AD7203000C6730080D773 /* MTCMapLocationViewController.m in Sources */,
+				A13462B9300648A700AC916F /* MTCWebSupportUtil.m in Sources */,
+				A12AD73A3000DD340080D773 /* MTCMapAddViewController.m in Sources */,
+				8C1000422FE2000000000001 /* ExampleSettingsSheetView.m in Sources */,
+				A1EC6E513020705500EE9A1E /* MTCMapRouteViewController.m in Sources */,
+				A12AD71A3000C62C0080D773 /* MTCMapUIListViewController.m in Sources */,
+				A12AD70D3000BE840080D773 /* MTCMapInteractionsViewController.m in Sources */,
+				d8e186814eaf42c9be5e36aa /* MTCMapLimitViewController.m in Sources */,
+				A1EC6E6A302099B500EE9A1E /* MTCWebRoutePanel.m in Sources */,
+				8C1000032FE2000000000001 /* main.m in Sources */,
+				A13462BC300659EC00AC916F /* MTCTextSearchRequestParams+MTCSupportFork.m in Sources */,
+				A13462C03008F40100AC916F /* MTCPlace+MTCPrettyFork.m in Sources */,
+				A13462A0300606B100AC916F /* MTCWebTextSearchViewController.m in Sources */,
+				A134622C3004B0E500AC916F /* MTCFloatInfoSimpleViewController.m in Sources */,
+				A13462393004D10100AC916F /* MTCFloatInfoDemoSupport.m in Sources */,
+				A13462B5300608D800AC916F /* MTCWebSettingsFloatView.m in Sources */,
+				A12AD7163000BF4C0080D773 /* MTCMapWebServiceListViewController.m in Sources */,
+				D3A500032026092300000001 /* MTCToolListViewController.m in Sources */,
+				A13462323004B19100AC916F /* MTCFloatInfoRichTextViewController.m in Sources */,
+				A1EC6E6F3020BA8A00EE9A1E /* MTCExampleBaseViewController.m in Sources */,
+				E1A100132FE3000000000001 /* MTCExampleTestAccessibility.m in Sources */,
+				E1A100262FE3000000000001 /* MTCExampleMapTestSupport.m in Sources */,
+				A13462AC3006074300AC916F /* MTCWebGeoCodingViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		8C1000322FE2000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+			};
+			name = Debug;
+		};
+		8C1000332FE2000000000001 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = arm64;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+			};
+			name = Release;
+		};
+		8C1000342FE2000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C10000A2FF7000000000001 /* MaptecMapsExampleDebug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 739V3A7L7J;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INFOPLIST_FILE = MaptecMapsExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maptec.maps.example;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				STRIP_INSTALLED_PRODUCT = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8C1000352FE2000000000001 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C10000B2FF7000000000001 /* MaptecMapsExampleRelease.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 739V3A7L7J;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = MaptecMapsExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maptec.maps.example;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E1A1000E2FE3000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 739V3A7L7J;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maptec.maps.example;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MaptecMapsExample;
+			};
+			name = Debug;
+		};
+		E1A1000F2FE3000000000001 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 739V3A7L7J;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maptec.maps.example;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MaptecMapsExample;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8C1000302FE2000000000001 /* Build configuration list for PBXNativeTarget "MaptecMapsExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C1000342FE2000000000001 /* Debug */,
+				8C1000352FE2000000000001 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C1000312FE2000000000001 /* Build configuration list for PBXProject "MaptecMapsExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C1000322FE2000000000001 /* Debug */,
+				8C1000332FE2000000000001 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8C1000242FE2000000000001 /* Project object */;
+}

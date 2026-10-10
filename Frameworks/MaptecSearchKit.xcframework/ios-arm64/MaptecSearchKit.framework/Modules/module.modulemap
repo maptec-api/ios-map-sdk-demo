@@ -1,0 +1,6 @@
+framework module MaptecSearchKit {
+  umbrella header "MaptecSearchKit.h"
+  export *
+
+  module * { export * }
+}

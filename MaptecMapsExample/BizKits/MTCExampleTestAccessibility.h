@@ -1,0 +1,255 @@
+#import <Foundation/Foundation.h>
+
+NS_ASSUME_NONNULL_BEGIN
+
+/// Demo 页 UI 测试标识，命名与 Android mapSdkDemo 仪器测试 tag 对齐。
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilitySettingsButton;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityLanguageToggle;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityMapView;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityMarkerCountValueKey;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityCircleCountValueKey;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityLineCountValueKey;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityFillCountValueKey;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityClusterCountValueKey;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityClusterHasCluster;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityHeatmapCountValueKey;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityHeatmapHasHeatmaps;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityMapZoomView;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityMapLogoView;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityMapDayNightView;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityLevelMarkerZIndex;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityUITestingArgument;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityUITestingRoutePrefix;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityUITestingRouteBasicMarker;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityUITestingRouteBasicCircle;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityUITestingRouteBasicPolyline;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityUITestingRouteBasicPolygon;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityUITestingRouteMapGesture;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityOverlayBasicMarkerScreen;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityOverlayBasicCircleScreen;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityOverlayEqualDistanceCircleScreen;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityOverlayBasicPolylineScreen;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityOverlayGradientPolylineScreen;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityOverlayBasicPolygonScreen;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityOverlayMarkerAnimationScreen;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityOverlayMarkerMovementScreen;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityOverlayMarkerCollisionBehaviorScreen;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityOverlayMarkerSdfScreen;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityMapGestureControlScreen;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityMapCompassScreen;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityMapScaleScreen;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityMapZoomScreen;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityMapLogoScreen;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityMapDayNightScreen;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityMapGestureCoordinationScreen;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityMapGestureThresholdScreen;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityMapAddScreen;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityMapLimitScreen;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilitySettingsSheetTable;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityLanguageValueChinese;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityLanguageValueEnglish;
+
+/// 通用地图渲染 hook
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityMapRendered;
+
+/// 地图 UI 控件
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilitySwitchCompassEnabled;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilitySwitchCompassFadeWhenFacingNorth;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityDropdownCompassGravity;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityBtnCompassRotateClockwise;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityMapCompassView;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilitySwitchScaleEnabled;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityDropdownScaleGravity;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityMapScaleBar;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilitySwitchZoomEnabled;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityDropdownZoomGravity;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityDropdownLogoGravity;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilitySwitchDayNightEnabled;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityDropdownDayNightGravity;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityBtnDayNightToggle;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilitySwitchTrafficEnabled;
+
+/// 地图手势协调与阈值
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilitySwitchSimultaneousGestures;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityBtnConfirmMutualGestures;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilitySliderMoveThreshold;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilitySliderRotateThreshold;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilitySliderRotateResistance;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilitySliderShoveThreshold;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilitySliderShoveResistance;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilitySliderDoubleClickDelay;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilitySwitchDoubleTapPitchReset;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilitySliderDoubleTapZoomFactor;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilitySliderInertialScrollDuration;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilitySliderTwoFingerTapZoomReset;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilitySliderZoomAnimationDuration;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityDropdownZoomCenterMode;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityRadioZoomCenterGesture;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityRadioZoomCenterScreen;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilitySliderRotateBearingMin;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilitySliderRotateBearingMax;
+
+/// 基础标记页（MarkerBasicScreen）
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilitySymbolInputLatLng;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilitySymbolInputIconSize;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilitySymbolBtnAddByType;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilitySymbolBtnAddMarker;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilitySymbolBtnClearAll;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilitySymbolBtnStopAllAnimations;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilitySymbolLayerHasMarkers;
+
+/// Marker 动画与 SDF 标记
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityAnimBtnEnterStart;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityAnimBtnEnterEnd;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityAnimBtnDisappearStart;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityAnimBtnDisappearEnd;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityAnimDropdownEnter;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityAnimDropdownSelect;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityAnimDropdownDisappear;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilitySymbolInputSdfIconColor;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilitySymbolBtnAddSdf;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityMarkerMovementStartButton;
+
+/// 圆形覆盖物（CircleBasicScreen 等）
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityCircleInputLatLng;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityCircleDrawButton;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityCircleClearButton;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityCircleHasCircles;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityCircleSwitchGeodesic;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityCircleSwitchDraggable;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityCircleSwitchInnerShadow;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityCircleSwitchOuterGlow;
+
+/// 折线覆盖物（PolylineBasicScreen 等）
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityLineButtonDraw;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityLineHasLines;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityLineSwitchClosed;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityLineSwitchDraggable;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityLineDropdownStartCap;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityLineDropdownEndCap;
+
+/// 多边形覆盖物（PolygonBasicScreen）
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityFillInputCoordinates;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityFillInputColor;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityFillInputOutlineColor;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityFillDrawButton;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityFillHasFills;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityFillSwitchDraggable;
+
+/// 地图手势（MapGestureScreen）
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilitySwitchAllGesture;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilitySwitchScrollGesture;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilitySwitchRotateGesture;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilitySwitchTiltGesture;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilitySwitchDoubleFingerZoomGesture;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilitySwitchDoubleClickZoomGesture;
+
+/// 新增页面 Screen 标识
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityMapStyleScreen;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityMapTrafficScreen;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityMapLocationScreen;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityMapPoisScreen;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityHeatmapBasicsScreen;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityPointClusterScreen;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityFloatInfoSimpleScreen;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityOverlayLevelScreen;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityWebNearbySearchScreen;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityWebInputTipsScreen;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityWebLocationDetailScreen;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityWebAlongSearchScreen;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityWebGeoCodingScreen;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityWebReverseGeoCodingScreen;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityMapRouteScreen;
+
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityMapGestureInertialScrollDurationScreen;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityMapGestureTwoFingerTapZoomResetScreen;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityMapGestureDoubleTapZoomFactorScreen;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityMapGestureDoubleTapDelayScreen;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityMapGestureDoubleTapTiltResetScreen;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityMapGestureRotateBearingRangeScreen;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityMapGestureZoomCenterModeScreen;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityMapGestureZoomAnimationDurationScreen;
+
+/// 地图风格与路况
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityStyleLightButton;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityStyleDarkButton;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilitySwitchMapStyle;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityTextCurrentZoom;
+
+/// 定位与 POI
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilitySwitchLocationComponentEnabled;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilitySliderAccuracyAlpha;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityDropdownCameraMode;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityDropdownRenderMode;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityPoiCenterSwitch;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityPoiClearButton;
+
+/// 热力图与点聚合
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityHeatmapSliderRadius;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityHeatmapSliderWeight;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityHeatmapSliderIntensity;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityHeatmapSliderOpacity;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityHeatmapSliderMinZoom;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityHeatmapSliderMaxZoom;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityHeatmapDrawButton;
+
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityPointClusterSliderRadius;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityPointClusterSliderMaxZoom;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityPointClusterSliderMinPoints;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityPointClusterSwitchEnable;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityPointClusterSwitchAbbreviate;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityPointClusterSwitchVisible;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityPointClusterDrawButton;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityPointClusterRemoveButton;
+
+/// 气泡窗与层级
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityInfoBtnShowPopup;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityInfoBtnDismiss;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityInfoWindowBubble;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityLevelBtnMoveUp;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityLevelBtnMoveDown;
+
+/// 地图事件（MapEventListenerScreen）
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityMapEventScreen;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilitySwitchCameraMove;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilitySwitchMapLongClick;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilitySwitchFling;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilitySwitchCameraIdle;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilitySwitchCameraMoveStarted;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilitySwitchMapClick;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityBtnClearLogs;
+
+/// 视口与相机控制（MapViewPortScreen）
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityMapViewPortScreen;
+
+/// 限制经纬度显示边界
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityMapLimitApplyButton;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityMapLimitClearButton;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityInputPitchMax;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityInputPitchMin;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityInputPitchCurrent;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityInputBearingMax;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityInputBearingMin;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityInputBearingCurrent;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityInputZoomMax;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityInputZoomMin;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityInputZoomCurrent;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityBtnViewPortApply;
+
+/// 鉴权配置（AuthConfigScreen）
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityAuthConfigScreen;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityWebAuthStatusScreen;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityInputApiKey;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityInputSignatureSha1;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityBtnAuthConfirm;
+
+/// 地理围栏（GeofenceScreen）
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityGeofenceCircleScreen;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityGeofencePolygonScreen;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityGeofenceLoadPoint;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityGeofenceLoadPolygon;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityGeofenceClearAll;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityGeofenceClearMarker;
+FOUNDATION_EXPORT NSString * const MTCExampleTestAccessibilityGeofenceStatus;
+
+NS_ASSUME_NONNULL_END
