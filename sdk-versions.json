@@ -1,0 +1,18 @@
+{
+  "version": "1.0.1",
+  "sdks": {
+    "foundation": {
+      "version": "1.0.1",
+      "sha256": "f51ff9f57187ca0a453743303573545b123decfe713f4a881c1dded29e5e45ca"
+    },
+    "search": {
+      "version": "1.0.1",
+      "sha256": "70a4c2ad1a92ec11e42aa97aafd3cf61c5ade353eeebb296e946d5370e79b7a4"
+    },
+    "maps": {
+      "version": "1.0.1",
+      "sha256": "96081504ecaf682b14cd048b43ad1e76c2766e5506deb56c194ecff06d8f0820"
+    }
+  },
+  "compositionId": "3c62fd0a38"
+}
